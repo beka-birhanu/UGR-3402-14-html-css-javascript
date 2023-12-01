@@ -14,13 +14,25 @@
     />
 
     <meta name="author" content="Beka Birhanu" />
-    <link rel="icon" href="./images/logos/logo.jpg" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="icon" href="./images/logos/favicon.ico" type="image/x-icon" />
+    <link
+      rel="shortcut icon"
+      href="./images/logos/favicon.ico"
+      type="image/x-icon"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,500&display=swap"
+      rel="stylesheet"
+    />
     <title>Beka Birhanu - Full Stack Web Developer</title>
   </head>
   <body>
-    <header>
-      <img src="./images/logos/logo.jpg" alt="Beka Birhanu Logo" />
-      <nav>
+    <header class="horizontal-flex">
+      <img src="./images/logos/logo.png" alt="Beka Birhanu Logo" class="logo" />
+      <nav class="mobile-hidden">
         <ul>
           <li><a href="#hero">Home</a></li>
           <li><a href="#about">About Me</a></li>
@@ -38,6 +50,7 @@
           viewBox="0 0 24 24"
           stroke-width="1.5"
           stroke="currentColor"
+          class="nav-icon"
         >
           <path
             stroke-linecap="round"
@@ -48,46 +61,58 @@
       </button>
     </header>
     <main>
-      <article>
+      <article id="my-info">
         <section id="hero">
-          <p>LET'S BUILD SOMETHING TOGETHER</p>
-          <h1>Hello, I'm Beka</h1>
-          <p>
-            A <strong>Full Stack Web Developer</strong> with a passion for a
-            Machine Learning
-          </p>
-          <p>
-            My expertise lies in crafting robust back-end solutions <br />
-            building responsive full stack web applications
-          </p>
-          <a href="#project">Explore My Work</a>
-          <img src="./images/hero.webp" alt="Photo me" />
-        </section>
-        <section id="about">
-          <p>ABOUT</p>
-          <h2>Who I Am</h2>
+          <div class="hero-text">
+            <div>
+              <p class="p-1">LET'S BUILD SOMETHING TOGETHER</p>
+              <h1 class="h-1 name-intro">
+                Hi, I'm <span class="blue">Beka</span>
+              </h1>
+            </div>
 
-          <p>
-            I'm a dedicated Full Stack Web Developer passionate about turning
-            ideas into elegant, functional web solutions. Specializing in
-            back-end development, I build the engines that power seamless
-            applications. With a design-focused approach to front-end
-            development, I bring creativity to user interfaces. As a highly
-            motivated 3rd-year software engineering student, I am continuously
-            honing my skills and knowledge in this ever-evolving field. My
-            excitement lies in the prospect of delving into the realms of
-            machine learning, aspiring to harness the power of intelligence in
-            shaping the future of technology. Let's connect and embark on a
-            journey of innovation together!
-          </p>
+            <p>
+              <strong class="h-1">Full Stack Web Developer</strong> <br />
+              with a passion for a Machine Learning
+            </p>
+            <p>
+              My expertise lies in crafting robust back-end solutions & building
+              responsive full stack web applications
+            </p>
+          </div>
+          <div class="hero-image">
+            <a href="#project">Explore My Work</a>
+            <img src="./images/background/hero.webp" alt="photo in work" />
+          </div>
+        </section>
+        <section id="about" class="vertical-flex section-container">
+          <p class="blue title">ABOUT</p>
+          <div>
+            <h2 class="h-2 start">Who I Am</h2>
+
+            <p class="p-2">
+              I'm a dedicated Full Stack Web Developer passionate about turning
+              ideas into elegant, functional web solutions. Specializing in
+              back-end development, I build the engines that power seamless
+              applications. With a design-focused approach to front-end
+              development, I bring creativity to user interfaces. As a highly
+              motivated 3rd-year software engineering student, I am continuously
+              honing my skills and knowledge in this ever-evolving field. My
+              excitement lies in the prospect of delving into the realms of
+              machine learning, aspiring to harness the power of intelligence in
+              shaping the future of technology. Let's connect and embark on a
+              journey of innovation together!
+            </p>
+          </div>
           <nav aria-label="social media link to my profile">
-            <ul>
+            <ul class="socila-media-nav horizontal-flex">
               <li>
                 <a
                   href="https://github.com/beka-birhanu"
                   target="_blank"
                   rel="noreferrer"
                   aria-label="github"
+                  class="socila-media-links shadow-1 circle"
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -106,6 +131,7 @@
                   target="_blank"
                   rel="noreferrer"
                   aria-label="linkedin"
+                  class="socila-media-links shadow-1 circle"
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -125,11 +151,12 @@
                   target="_blank"
                   rel="noreferrer"
                   aria-label="LeetCode"
+                  class="socila-media-links shadow-1 circle"
                   ><svg
                     xmlns="http://www.w3.org/2000/svg"
                     x="0px"
                     y="0px"
-                    viewBox="0 0 24 24"
+                    viewBox="0 0 16 16"
                   >
                     <path
                       d="M 10.447266 0.265625 A 0.50005 0.50005 0 0 0 10.103516 0.41796875 L 5.65625 4.8671875 L 3.0957031 7.4257812 A 0.50005 0.50005 0 0 0 2.9785156 7.6035156 C 1.769869 8.9739016 1.7865696 11.063913 3.0957031 12.373047 L 5.65625 14.933594 C 7.0176322 16.294976 9.242133 16.294976 10.603516 14.933594 L 12.853516 12.683594 A 0.50063809 0.50063809 0 1 0 12.144531 11.976562 L 9.8945312 14.226562 C 8.9159134 15.20518 7.3418991 15.20518 6.3632812 14.226562 L 3.8027344 11.666016 C 2.8241166 10.687398 2.8241166 9.1114303 3.8027344 8.1328125 L 6.3632812 5.5742188 C 7.3418991 4.5956009 8.9159135 4.5956009 9.8945312 5.5742188 L 12.144531 7.8242188 A 0.50063784 0.50063784 0 1 0 12.853516 7.1171875 L 10.603516 4.8671875 C 9.9106907 4.174363 8.9943718 3.8431189 8.0820312 3.8554688 L 10.8125 1.125 A 0.50005 0.50005 0 0 0 10.447266 0.265625 z M 7.328125 9.4003906 A 0.50005 0.50005 0 1 0 7.328125 10.400391 L 14.228516 10.400391 A 0.50005 0.50005 0 1 0 14.228516 9.4003906 L 7.328125 9.4003906 z"
@@ -140,263 +167,353 @@
             </ul>
           </nav>
         </section>
-        <section>
-          <p>PLATFORMS</p>
-          <h2>
+        <section id="platform" class="vertical-flex section-container">
+          <p class="blue title">PLATFORMS</p>
+          <h2 class="h-2 start">
             Where I Learn
             <abbr title="data structures and algorithms">DSA</abbr>
           </h2>
-          <section>
-            <img
-              src="./images/logos/leetcode.png"
-              alt="leetcode logo"
-              height="24"
-            />
-            <h2>LEETCODE</h2>
-            <p>
-              LeetCode has been my anchor in the realm of coding challenges and
-              algorithmic problem-solving. Tackling
-              <strong>over 200 problems</strong> on this platform has been a
-              transformative journey. Starting out, the challenges seemed
-              formidable, but LeetCode's clear explanations and diverse problem
-              set gradually turned obstacles into stepping stones. It has become
-              my preferred platform, a reliable companion in my quest for
-              continuous improvement and mastery of algorithms.
-            </p>
-            <a href="https://leetcode.com/beka_birhanu/">Watch My Profile</a>
-          </section>
-          <section>
-            <img src="./images/logos/codeforce.webp" alt="codeforces logo" />
-            <h2>CODEFORCES</h2>
-            <p>
-              Navigating the realm of competitive programming, my journey on
-              Codeforces has been both challenging and rewarding. With a
-              dedication to honing my skills, I've tackled numerous problems on
-              this platform, gradually improving my problem-solving abilities.
-              While the initial hurdles were substantial, Codeforces provided a
-              structured and engaging environment that facilitated my growth.
-              Surpassing the difficulties, I've come to appreciate Codeforces as
-              a valuable resource that has significantly contributed to my
-              proficiency in competitive programming.
-            </p>
-            <a href="https://codeforces.com/profile/beka-birhanu"
-              >Watch My Profile</a
-            >
-          </section>
+          <div class="vertical-flex platform-container start">
+            <section class="vertical-flex">
+              <div class="start">
+                <img
+                  src="./images/logos/leetcode.png"
+                  alt="leetcode logo"
+                  class="platform-icon"
+                />
+                <h2 class="p-1">LEETCODE</h2>
+              </div>
+              <p class="p-2">
+                LeetCode has been my anchor in the realm of coding challenges
+                and algorithmic problem-solving. Tackling
+                <strong>over 200 problems</strong> on this platform has been a
+                transformative journey. Starting out, the challenges seemed
+                formidable, but LeetCode's clear explanations and diverse
+                problem set gradually turned obstacles into stepping stones. It
+                has become my preferred platform, a reliable companion in my
+                quest for continuous improvement and mastery of algorithms.
+              </p>
+              <a href="https://leetcode.com/beka_birhanu/" target="_blank"
+                >Watch My Profile</a
+              >
+            </section>
+            <section class="vertical-flex">
+              <div class="start">
+                <img
+                  src="./images/logos/codeforce.webp"
+                  alt="codeforces logo"
+                  class="platform-icon"
+                />
+                <h2 class="p-1">CODEFORCES</h2>
+              </div>
+              <p class="p-2">
+                Navigating the realm of competitive programming, my journey on
+                Codeforces has been both challenging and rewarding. With a
+                dedication to honing my skills, I've tackled numerous problems
+                on this platform, gradually improving my problem-solving
+                abilities. While the initial hurdles were substantial,
+                Codeforces provided a structured and engaging environment that
+                facilitated my growth. Surpassing the difficulties, I've come to
+                appreciate Codeforces as a valuable resource that has
+                significantly contributed to my proficiency in competitive
+                programming.
+              </p>
+              <a
+                href="https://codeforces.com/profile/beka-birhanu"
+                target="_blank"
+                >Watch My Profile</a
+              >
+            </section>
+          </div>
         </section>
-        <section id="skill">
-          <p>SKILLS</p>
-          <h2>What I Can Do</h2>
-          <ul>
+        <section id="skill" class="vertical-flex section-container">
+          <p class="p-1 title blue">SKILLS</p>
+          <h2 class="h-2 start">What I Can Do</h2>
+          <ul class="horizontal-flex skill-card-container">
             <li>
-              <figure>
-                <img src="./images/logos/html5.png" alt="html logo" />
-                <figcaption>html</figcaption>
+              <figure class="skill-card horizontal-flex shadow-1">
+                <img
+                  src="./images/logos/html5.png"
+                  alt="html logo"
+                  class="skill-image"
+                />
+                <figcaption class="h-3">html</figcaption>
               </figure>
             </li>
             <li>
-              <figure>
-                <img src="./images/logos/css3.png" alt="CSS logo" />
-                <figcaption>CSS</figcaption>
+              <figure class="skill-card horizontal-flex shadow-1">
+                <img
+                  src="./images/logos/css3.png"
+                  alt="CSS logo"
+                  class="skill-image"
+                />
+                <figcaption class="h-3">CSS</figcaption>
               </figure>
             </li>
             <li>
-              <figure>
+              <figure class="skill-card horizontal-flex shadow-1">
                 <img
                   src="./images/logos/Bootstrap_logo.svg.png"
                   alt="Bootstrap logo"
+                  class="skill-image"
                 />
-                <figcaption>Bootstrap</figcaption>
+                <figcaption class="h-3">Bootstrap</figcaption>
               </figure>
             </li>
             <li>
-              <figure>
+              <figure class="skill-card horizontal-flex shadow-1">
                 <img
                   src="./images/logos/javascript.png"
                   alt="JavaScript logo"
+                  class="skill-image"
                 />
-                <figcaption>JavaScript</figcaption>
+                <figcaption class="h-3">JavaScript</figcaption>
               </figure>
             </li>
             <li>
-              <figure>
-                <img src="./images/logos/react.png" alt="React logo" />
-                <figcaption>React</figcaption>
+              <figure class="skill-card horizontal-flex shadow-1">
+                <img
+                  src="./images/logos/react.png"
+                  alt="React logo"
+                  class="skill-image"
+                />
+                <figcaption class="h-3">React</figcaption>
               </figure>
             </li>
             <li>
-              <figure>
-                <img src="./images/logos/git-icon-logo.png" alt="Git logo" />
-                <figcaption>Git</figcaption>
+              <figure class="skill-card horizontal-flex shadow-1">
+                <img
+                  src="./images/logos/git-icon-logo.png"
+                  alt="Git logo"
+                  class="skill-image"
+                />
+                <figcaption class="h-3">Git</figcaption>
               </figure>
             </li>
             <li>
-              <figure>
-                <img src="./images/logos/github-logo.png" alt="Github logo" />
-                <figcaption>Github</figcaption>
+              <figure class="skill-card horizontal-flex shadow-1">
+                <img
+                  src="./images/logos/github-logo.png"
+                  alt="Github logo"
+                  class="skill-image"
+                />
+                <figcaption class="h-3">Github</figcaption>
               </figure>
             </li>
             <li>
-              <figure>
-                <img src="./images/logos/python.png" alt="Pyhton logo" />
-                <figcaption>Pyhton</figcaption>
+              <figure class="skill-card horizontal-flex shadow-1">
+                <img
+                  src="./images/logos/python.png"
+                  alt="Pyhton logo"
+                  class="skill-image"
+                />
+                <figcaption class="h-3">Pyhton</figcaption>
               </figure>
             </li>
             <li>
-              <figure>
-                <img src="./images/logos/django.jpg" alt="Django logo" />
-                <figcaption>Django</figcaption>
+              <figure class="skill-card horizontal-flex shadow-1" id="x">
+                <img
+                  src="./images/logos/django.jpg"
+                  alt="Django logo"
+                  class="skill-image"
+                />
+                <figcaption class="h-3">Django</figcaption>
               </figure>
             </li>
             <li>
-              <figure>
-                <img src="./images/logos/numpy-logo.png" alt="Numpy logo" />
-                <figcaption>Numpy</figcaption>
+              <figure class="skill-card horizontal-flex shadow-1">
+                <img
+                  src="./images/logos/numpy-logo.png"
+                  alt="Numpy logo"
+                  class="skill-image"
+                />
+                <figcaption class="h-3">Numpy</figcaption>
               </figure>
             </li>
             <li>
-              <figure>
+              <figure class="skill-card horizontal-flex shadow-1">
                 <img
                   src="./images/logos/pandas-icon-logo.png"
                   alt="Pandas logo"
+                  class="skill-image"
                 />
-                <figcaption>Pandas</figcaption>
+                <figcaption class="h-3">Pandas</figcaption>
               </figure>
             </li>
             <li>
-              <figure>
-                <img src="./images/logos/java-logo.png" alt="Java logo" />
-                <figcaption>Java</figcaption>
+              <figure class="skill-card horizontal-flex shadow-1">
+                <img
+                  src="./images/logos/java-logo.png"
+                  alt="Java logo"
+                  class="skill-image"
+                />
+                <figcaption class="h-3">Java</figcaption>
               </figure>
             </li>
           </ul>
         </section>
-        <section id="project">
-          <p>PROJECTS</p>
-          <h2>What I've Built</h2>
-          <ul>
+        <section id="project" class="vertical-flex section-container">
+          <p class="p-1 title blue">PROJECTS</p>
+          <h2 class="h-2 start">What I've Built</h2>
+          <ul class="vertical-flex project-image-container">
             <li>
               <img
                 src="./images/projects/Idirr.png"
                 alt="Home page of my idirr project"
+                class="project-image"
               />
-              <h3>Idirr</h3>
-              <p>Java and SQL</p>
-              <a href="./project-detail.html">More Info</a>
+              <div class="overlay">
+                <h3 class="h-1">Idirr</h3>
+                <p class="p-2">Java and SQL</p>
+                <a href="./project-detail.html" class="btn-secondary"
+                  >More Info</a
+                >
+              </div>
             </li>
             <li>
               <img
                 src="./images/projects/codebook-home_page.jpg"
                 alt="Home page of my codeBook project "
+                class="project-image"
               />
-              <h3>CodeBook</h3>
-              <p>Ract JS</p>
-              <a href="./project-detail.html">More Info</a>
+              <div class="overlay">
+                <h3 class="h-1">CodeBook</h3>
+                <p>Ract JS</p>
+                <a href="./project-detail.html" class="btn-secondary"
+                  >More Info</a
+                >
+              </div>
             </li>
             <li>
               <img
                 src="./images/projects/Blackjack.png"
                 alt="Home page of my codeBook project "
+                class="project-image"
               />
-              <h3>Blackjack</h3>
-              <p>Pyhton</p>
-              <a href="./project-detail.html">More Info</a>
+              <div class="overlay">
+                <h3 class="h-1">Blackjack</h3>
+                <p>Pyhton</p>
+                <a href="./project-detail.html" class="btn-secondary"
+                  >More Info</a
+                >
+              </div>
             </li>
             <li>
               <img
                 src="./images/projects/githubFinder-home.png"
                 alt="Home page of my Github finder project "
+                class="project-image"
               />
-              <h3>Github Finder</h3>
-              <p>React JS</p>
-              <a href="./project-detail.html">More Info</a>
+              <div class="overlay">
+                <h3 class="h-1">Github Finder</h3>
+                <p>React JS</p>
+                <a href="./project-detail.html" class="btn-secondary"
+                  >More Info</a
+                >
+              </div>
             </li>
           </ul>
         </section>
       </article>
-      <article id="contact">
-        <p>Contact</p>
-        <h2>Get In Touch</h2>
-        <section>
-          <h2>Beka Birhanu</h2>
-          <p>Full Stack Developer</p>
-          <p>
-            I am available for freelance or full-time positions. Contact me and
-            let&apos;s talk.
-          </p>
-          <p>Connect With Me</p>
-          <nav aria-label="social media link to my profile">
-            <ul>
-              <li>
-                <a
-                  href="https://github.com/beka-birhanu"
-                  target="_blank"
-                  rel="noreferrer"
-                  aria-label="github"
-                >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="#000000"
-                    viewBox="0 0 256 256"
-                  >
-                    <path
-                      d="M208.31,75.68A59.78,59.78,0,0,0,202.93,28,8,8,0,0,0,196,24a59.75,59.75,0,0,0-48,24H124A59.75,59.75,0,0,0,76,24a8,8,0,0,0-6.93,4,59.78,59.78,0,0,0-5.38,47.68A58.14,58.14,0,0,0,56,104v8a56.06,56.06,0,0,0,48.44,55.47A39.8,39.8,0,0,0,96,192v8H72a24,24,0,0,1-24-24A40,40,0,0,0,8,136a8,8,0,0,0,0,16,24,24,0,0,1,24,24,40,40,0,0,0,40,40H96v16a8,8,0,0,0,16,0V192a24,24,0,0,1,48,0v40a8,8,0,0,0,16,0V192a39.8,39.8,0,0,0-8.44-24.53A56.06,56.06,0,0,0,216,112v-8A58.14,58.14,0,0,0,208.31,75.68ZM200,112a40,40,0,0,1-40,40H112a40,40,0,0,1-40-40v-8a41.74,41.74,0,0,1,6.9-22.48A8,8,0,0,0,80,73.83a43.81,43.81,0,0,1,.79-33.58,43.88,43.88,0,0,1,32.32,20.06A8,8,0,0,0,119.82,64h32.35a8,8,0,0,0,6.74-3.69,43.87,43.87,0,0,1,32.32-20.06A43.81,43.81,0,0,1,192,73.83a8.09,8.09,0,0,0,1,7.65A41.72,41.72,0,0,1,200,104Z"
-                    ></path>
-                  </svg>
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://www.linkedin.com/in/beka-birhanu-atomsa/"
-                  target="_blank"
-                  rel="noreferrer"
-                  aria-label="linkedin"
-                >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    x="0px"
-                    y="0px"
-                    viewBox="0 0 50 50"
-                  >
-                    <path
-                      d="M 8 3.0117188 C 6.3126093 3.0117188 4.8354789 3.4916328 3.7539062 4.3652344 C 2.6723337 5.238836 2.0117188 6.533218 2.0117188 7.9472656 C 2.0117188 10.690836 4.4687078 12.814467 7.7167969 12.941406 A 0.98809878 0.98809878 0 0 0 8 12.988281 C 9.753566 12.988281 11.246191 12.474267 12.3125 11.564453 C 13.378809 10.654639 13.988281 9.3429353 13.988281 7.9472656 A 0.98809878 0.98809878 0 0 0 13.986328 7.8925781 C 13.832307 5.1316834 11.374781 3.0117187 8 3.0117188 z M 8 4.9882812 C 10.60907 4.9882812 11.895883 6.2693448 12.005859 7.9726562 C 11.998759 8.8049335 11.676559 9.5118991 11.03125 10.0625 C 10.378809 10.619186 9.371434 11.011719 8 11.011719 C 5.3980542 11.011719 3.9882813 9.5991704 3.9882812 7.9472656 C 3.9882812 7.1213132 4.3276663 6.4422421 4.9960938 5.9023438 C 5.6645211 5.3624454 6.6873907 4.9882813 8 4.9882812 z M 3 15 A 1.0001 1.0001 0 0 0 2 16 L 2 45 A 1.0001 1.0001 0 0 0 3 46 L 13 46 A 1.0001 1.0001 0 0 0 14 45 L 14 35.664062 L 14 16 A 1.0001 1.0001 0 0 0 13 15 L 3 15 z M 18 15 A 1.0001 1.0001 0 0 0 17 16 L 17 45 A 1.0001 1.0001 0 0 0 18 46 L 28 46 A 1.0001 1.0001 0 0 0 29 45 L 29 29 L 29 28.75 L 29 28.5 C 29 26.555577 30.555577 25 32.5 25 C 34.444423 25 36 26.555577 36 28.5 L 36 45 A 1.0001 1.0001 0 0 0 37 46 L 47 46 A 1.0001 1.0001 0 0 0 48 45 L 48 28 C 48 23.873476 46.787888 20.604454 44.744141 18.375 C 42.700394 16.145546 39.849212 15 36.787109 15 C 32.882872 15 30.521631 16.426076 29 17.601562 L 29 16 A 1.0001 1.0001 0 0 0 28 15 L 18 15 z M 4 17 L 12 17 L 12 35.664062 L 12 44 L 4 44 L 4 17 z M 19 17 L 27 17 L 27 19.638672 A 1.0001 1.0001 0 0 0 28.744141 20.306641 C 28.744141 20.306641 31.709841 17 36.787109 17 C 39.360007 17 41.615528 17.922268 43.269531 19.726562 C 44.923534 21.530858 46 24.261524 46 28 L 46 44 L 38 44 L 38 28.5 A 1.0001 1.0001 0 0 0 37.916016 28.089844 C 37.694061 25.26411 35.38033 23 32.5 23 C 29.474423 23 27 25.474423 27 28.5 L 27 28.75 L 27 29 L 27 44 L 19 44 L 19 17 z"
-                    ></path>
-                  </svg>
-                </a>
-              </li>
-            </ul>
-          </nav>
-        </section>
-        <section>
-          <form>
-            <label for="name">Name</label>
-            <input type="text" id="name" name="name" required />
-            <label> Phone Number </label>
-            <input type="tel" name="phone" required />
-
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" required />
-
-            <label for="subject">Subject</label>
-            <input type="text" id="subject" name="subject" required />
-            <label for="message">Message</label>
-            <textarea
-              rows="10"
-              id="message"
-              name="message"
-              placeholder="Your Message"
-              required
-            ></textarea>
-
-            <button type="submit" aria-label="Send Message">
-              Send Message
-            </button>
-          </form>
-        </section>
+      <article id="contact" class="vertical-flex">
+        <p class="p-1 title blue">Contact</p>
+        <h2 class="h-2 start">Get In Touch</h2>
+        <div class="shadow-1">
+          <section class="get-in-touch section-container vertical-flex">
+            <div class="get-in-touch-hero">
+              <h2 class="h-2">Beka Birhanu</h2>
+              <p class="p-2">Full Stack Developer</p>
+              <p>
+                I am available for freelance or full-time positions. Contact me
+                and let&apos;s talk.
+              </p>
+            </div>
+            <div class="vertical-flex connect-with-me">
+              <p>Connect With Me</p>
+              <nav aria-label="social media link to my profile">
+                <ul class="socila-media-nav horizontal-flex">
+                  <li>
+                    <a
+                      href="https://github.com/beka-birhanu"
+                      target="_blank"
+                      rel="noreferrer"
+                      aria-label="github"
+                      class="socila-media-links shadow-1 circle"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="#000000"
+                        viewBox="0 0 256 256"
+                      >
+                        <path
+                          d="M208.31,75.68A59.78,59.78,0,0,0,202.93,28,8,8,0,0,0,196,24a59.75,59.75,0,0,0-48,24H124A59.75,59.75,0,0,0,76,24a8,8,0,0,0-6.93,4,59.78,59.78,0,0,0-5.38,47.68A58.14,58.14,0,0,0,56,104v8a56.06,56.06,0,0,0,48.44,55.47A39.8,39.8,0,0,0,96,192v8H72a24,24,0,0,1-24-24A40,40,0,0,0,8,136a8,8,0,0,0,0,16,24,24,0,0,1,24,24,40,40,0,0,0,40,40H96v16a8,8,0,0,0,16,0V192a24,24,0,0,1,48,0v40a8,8,0,0,0,16,0V192a39.8,39.8,0,0,0-8.44-24.53A56.06,56.06,0,0,0,216,112v-8A58.14,58.14,0,0,0,208.31,75.68ZM200,112a40,40,0,0,1-40,40H112a40,40,0,0,1-40-40v-8a41.74,41.74,0,0,1,6.9-22.48A8,8,0,0,0,80,73.83a43.81,43.81,0,0,1,.79-33.58,43.88,43.88,0,0,1,32.32,20.06A8,8,0,0,0,119.82,64h32.35a8,8,0,0,0,6.74-3.69,43.87,43.87,0,0,1,32.32-20.06A43.81,43.81,0,0,1,192,73.83a8.09,8.09,0,0,0,1,7.65A41.72,41.72,0,0,1,200,104Z"
+                        ></path>
+                      </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.linkedin.com/in/beka-birhanu-atomsa/"
+                      target="_blank"
+                      rel="noreferrer"
+                      aria-label="linkedin"
+                      class="socila-media-links shadow-1 circle"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        x="0px"
+                        y="0px"
+                        viewBox="0 0 50 50"
+                      >
+                        <path
+                          d="M 8 3.0117188 C 6.3126093 3.0117188 4.8354789 3.4916328 3.7539062 4.3652344 C 2.6723337 5.238836 2.0117188 6.533218 2.0117188 7.9472656 C 2.0117188 10.690836 4.4687078 12.814467 7.7167969 12.941406 A 0.98809878 0.98809878 0 0 0 8 12.988281 C 9.753566 12.988281 11.246191 12.474267 12.3125 11.564453 C 13.378809 10.654639 13.988281 9.3429353 13.988281 7.9472656 A 0.98809878 0.98809878 0 0 0 13.986328 7.8925781 C 13.832307 5.1316834 11.374781 3.0117187 8 3.0117188 z M 8 4.9882812 C 10.60907 4.9882812 11.895883 6.2693448 12.005859 7.9726562 C 11.998759 8.8049335 11.676559 9.5118991 11.03125 10.0625 C 10.378809 10.619186 9.371434 11.011719 8 11.011719 C 5.3980542 11.011719 3.9882813 9.5991704 3.9882812 7.9472656 C 3.9882812 7.1213132 4.3276663 6.4422421 4.9960938 5.9023438 C 5.6645211 5.3624454 6.6873907 4.9882813 8 4.9882812 z M 3 15 A 1.0001 1.0001 0 0 0 2 16 L 2 45 A 1.0001 1.0001 0 0 0 3 46 L 13 46 A 1.0001 1.0001 0 0 0 14 45 L 14 35.664062 L 14 16 A 1.0001 1.0001 0 0 0 13 15 L 3 15 z M 18 15 A 1.0001 1.0001 0 0 0 17 16 L 17 45 A 1.0001 1.0001 0 0 0 18 46 L 28 46 A 1.0001 1.0001 0 0 0 29 45 L 29 29 L 29 28.75 L 29 28.5 C 29 26.555577 30.555577 25 32.5 25 C 34.444423 25 36 26.555577 36 28.5 L 36 45 A 1.0001 1.0001 0 0 0 37 46 L 47 46 A 1.0001 1.0001 0 0 0 48 45 L 48 28 C 48 23.873476 46.787888 20.604454 44.744141 18.375 C 42.700394 16.145546 39.849212 15 36.787109 15 C 32.882872 15 30.521631 16.426076 29 17.601562 L 29 16 A 1.0001 1.0001 0 0 0 28 15 L 18 15 z M 4 17 L 12 17 L 12 35.664062 L 12 44 L 4 44 L 4 17 z M 19 17 L 27 17 L 27 19.638672 A 1.0001 1.0001 0 0 0 28.744141 20.306641 C 28.744141 20.306641 31.709841 17 36.787109 17 C 39.360007 17 41.615528 17.922268 43.269531 19.726562 C 44.923534 21.530858 46 24.261524 46 28 L 46 44 L 38 44 L 38 28.5 A 1.0001 1.0001 0 0 0 37.916016 28.089844 C 37.694061 25.26411 35.38033 23 32.5 23 C 29.474423 23 27 25.474423 27 28.5 L 27 28.75 L 27 29 L 27 44 L 19 44 L 19 17 z"
+                        ></path>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </section>
+          <section class="email-me">
+            <form class="vertical-flex">
+              <div class="input-container">
+                <label for="name" class="p-2 start">Name</label>
+                <input type="text" id="name" name="name" required />
+              </div>
+              <div class="input-container">
+                <label for="phone" class="p-2 start"> Phone Number </label>
+                <input type="tel" id="phone" name="phone" required />
+              </div>
+              <div class="input-container">
+                <label for="email" class="p-2 start">Email</label>
+                <input type="email" id="email" name="email" required />
+              </div>
+              <div class="input-container">
+                <label for="subject" class="p-2 start">Subject</label>
+                <input type="text" id="subject" name="subject" required />
+              </div>
+              <div class="input-container">
+                <label for="message" class="p-2 start">Message</label>
+                <textarea
+                  rows="10"
+                  id="message"
+                  name="message"
+                  placeholder="Your Message"
+                  required
+                  class="p-2 start"
+                ></textarea>
+              </div>
+              <button type="submit" aria-label="Send Message" class="btn">
+                SEND MESSAGE
+              </button>
+            </form>
+          </section>
+        </div>
       </article>
     </main>
     <footer>
-      <img src="./images/logos/logo.jpg" alt="Beka Birhanu Logo" />
+      <img src="./images/logos/logo.png" alt="Beka Birhanu Logo" />
     </footer>
   </body>
 </html>

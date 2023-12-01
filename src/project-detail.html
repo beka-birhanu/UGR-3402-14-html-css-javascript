@@ -14,33 +14,43 @@
     />
 
     <meta name="author" content="Beka Birhanu" />
-    <link rel="icon" href="./images/logos/logo.jpg" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="icon" href="./images/logos/favicon.ico" type="image/x-icon" />
+    <link
+      rel="shortcut icon"
+      href="./images/logos/favicon.ico"
+      type="image/x-icon"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,500&display=swap"
+      rel="stylesheet"
+    />
     <title>Beka | Project</title>
   </head>
   <body>
-    <header>
-      <img src="./images/logos/logo.jpg" alt="Beka Birhanu Logo" />
-      <nav aria-label="Page Navigation">
+    <header class="horizontal-flex absolut-header">
+      <img src="./images/logos/logo.png" alt="Beka Birhanu Logo" class="logo" />
+      <nav class="mobile-hidden">
         <ul>
-          <li><a href="./index.html#hero">Home</a></li>
-          <li><a href="./index.html#about">About Me</a></li>
-          <li><a href="./index.html#skill">Skill</a></li>
-          <li><a href="./index.html#project">Projects</a></li>
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#about">About Me</a></li>
+          <li><a href="#skill">Skill</a></li>
+          <li><a href="#project">Projects</a></li>
           <li><a href="./resume.html">Resume</a></li>
           <li><a href="./blog.html">Blog</a></li>
-
-          <li><a href="./index.html#contact">Contact Me</a></li>
+          <li><a href="#contact">Contact Me</a></li>
         </ul>
       </nav>
       <button aria-label="Toggle Navigation">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
-          width="24"
-          height="24"
           viewBox="0 0 24 24"
           stroke-width="1.5"
           stroke="currentColor"
+          class="nav-icon"
         >
           <path
             stroke-linecap="round"
@@ -50,63 +60,66 @@
         </svg>
       </button>
     </header>
-    <main>
-      <section>
-        <h1>Github Finder App</h1>
-        <p>React JS <span>-</span>Bootstrap</p>
-        <img
-          src="./images/projects/githubFinder-home.png"
-          alt="Home page of github finder project"
-        />
+    <main id="project-main">
+      <section class="project-hero">
+        <h1 class="h-1">Github Finder App</h1>
+        <p class="h-3">React JS <span>/</span>Bootstrap</p>
       </section>
-      <section>
-        <p>Project</p>
-        <h2>Overview</h2>
-        <p>
-          I built this app to demonstrate knowledge working in React JS and
-          accessing API endpoints. This app was built using React JS and is
-          hosted on Netlify. Users are able to search for github user accounts.
-          This is made possble by accesing the github api endpoints. This
-          application was built using the GitHub API.
-        </p>
-        <nav
-          aria-label="Links to GitHub repository and deployed site of the project"
-        >
-          <ul>
-            <li>
-              <a
-                href="https://github.com/Ebbabire/github_finder"
-                title="View the GitHub repository for GitHub Finder project"
-                target="_blank"
-                rel="noopener noreferrer"
-                >View Code on GitHub</a
-              >
-            </li>
-            <li>
-              <a
-                href="https://github-finder-ebba.netlify.app/"
-                title="Explore the deployed site for GitHub Finder project"
-                target="_blank"
-                rel="noopener noreferrer"
-                >View Demo</a
-              >
-            </li>
+      <div class="project-detail-info vertical-flex">
+        <section class="section-container vertical-flex">
+          <div>
+            <p class="p-1 start">Project</p>
+            <h2 class="h-2 start">Overview</h2>
+            <p class="p-2">
+              I built this app to demonstrate knowledge working in React JS and
+              accessing API endpoints. This app was built using React JS and is
+              hosted on Netlify. Users are able to search for github user
+              accounts. This is made possble by accesing the github api
+              endpoints. This application was built using the GitHub API.
+            </p>
+          </div>
+          <nav
+            aria-label="Links to GitHub repository and deployed site of the project"
+            class="start"
+          >
+            <ul class="horizontal-flex project-detail-link">
+              <li>
+                <a
+                  href="https://github.com/Ebbabire/github_finder"
+                  title="View the GitHub repository for GitHub Finder project"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="btn btn-a shadow-1"
+                  >Code</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://github-finder-ebba.netlify.app/"
+                  title="Explore the deployed site for GitHub Finder project"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="btn btn-a shadow-1"
+                  >Demo</a
+                >
+              </li>
+            </ul>
+          </nav>
+        </section>
+        <section id="technologies-used" class="shadow-1 vertical-flex">
+          <h2 class="h-3">technologies</h2>
+          <ul class="horizontal-flex">
+            <li>React</li>
+            <li>Tailwind</li>
+            <li>Javascript</li>
+            <li>Github API</li>
           </ul>
-        </nav>
-      </section>
-      <section>
-        <h2>technologies</h2>
-        <ul>
-          <li>React</li>
-          <li>Tailwind</li>
-          <li>Javascript</li>
-          <li>Github API</li>
-        </ul>
-      </section>
-      <a href="./index.html#project">back</a>
+        </section>
+        <a href="./index.html#project" class="start">back</a>
+      </div>
     </main>
   </body>
   <footer>
-    <img src="./images/logos/logo.jpg" alt="Beka Birhanu Logo" />
+    <img src="./images/logos/logo.png" alt="Beka Birhanu Logo" />
   </footer>
 </html>

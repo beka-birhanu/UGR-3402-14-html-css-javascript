@@ -14,33 +14,43 @@
     />
 
     <meta name="author" content="Beka Birhanu" />
-    <link rel="icon" href="./images/logos/logo.jpg" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="icon" href="./images/logos/favicon.ico" type="image/x-icon" />
+    <link
+      rel="shortcut icon"
+      href="./images/logos/favicon.ico"
+      type="image/x-icon"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,500&display=swap"
+      rel="stylesheet"
+    />
     <title>Beka | Blog-Detail</title>
   </head>
   <body>
-    <header>
-      <img src="./images/logos/logo.jpg" alt="Beka Birhanu Logo" />
-      <nav>
+    <header class="horizontal-flex detail-blog-header">
+      <img src="./images/logos/logo.png" alt="Beka Birhanu Logo" class="logo" />
+      <nav class="mobile-hidden">
         <ul>
-          <li><a href="./index.html#hero">Home</a></li>
-          <li><a href="./index.html#about">About Me</a></li>
-          <li><a href="./index.html#skill">Skill</a></li>
-          <li><a href="./index.html#project">Projects</a></li>
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#about">About Me</a></li>
+          <li><a href="#skill">Skill</a></li>
+          <li><a href="#project">Projects</a></li>
           <li><a href="./resume.html">Resume</a></li>
           <li><a href="./blog.html">Blog</a></li>
-
-          <li><a href="./index.html#contact">Contact Me</a></li>
+          <li><a href="#contact">Contact Me</a></li>
         </ul>
       </nav>
       <button aria-label="Toggle Navigation">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
-          width="24"
-          height="24"
           viewBox="0 0 24 24"
           stroke-width="1.5"
           stroke="currentColor"
+          class="nav-icon"
         >
           <path
             stroke-linecap="round"
@@ -50,59 +60,71 @@
         </svg>
       </button>
     </header>
-    <main>
+    <main class="section-container vertical-flex">
       <video
         src="./images/Blog/What-is-Competitive-Programming.mp4"
         autoplay
       ></video>
-      <h1>Competitive Programming, How to start and Keep going</h1>
-      <p>
-        Do you wanna know how i my programming journey started? Let’s find out
-      </p>
-      <p>
-        Today we are gonna talk about Competitive Programming, How to start and
-        Keep going ?.
-      </p>
-      <p>
-        As usual let’s start with the today blog post’s agenda or table of
-        contents.
-      </p>
-      <p><strong>Table of Contents</strong></p>
-      <ol>
-        <li>
-          <a href="#what-is-competitive-programming"
-            >What is Competitive Programming ?</a
-          >
-        </li>
-        <li>
-          <a href="#why-competitive-programming"
-            >Why Competitive Programming ?</a
-          >
-        </li>
-        <li>
-          <a href="#how-to-start-competitive-programming"
-            >How to start Competitive Programming ?</a
-          >
-        </li>
-        <li><a href="#how-to-keep-going">How to keep going ?</a></li>
-        <li><a href="#where-to-practice">Where to Practice ?</a></li>
-        <li>
-          <a href="#books-to-learn-competitive-programming"
-            >Books to Learn Competitive Programming</a
-          >
-        </li>
-        <li>
-          <a href="#youtube-channels-to-learn-competitive-programming"
-            >YouTube Channels to Learn Competitive Programming</a
-          >
-        </li>
-        <li><a href="#conclusion">Conclusion</a></li>
-      </ol>
+      <div class="intro vertical-flex">
+        <h1 class="h-1">
+          Competitive Programming, How to start and Keep going
+        </h1>
+        <p class="p-3">
+          Do you wanna know how i my programming journey started? Let’s find out
+        </p>
+        <p class="p-3">
+          Today we are gonna talk about Competitive Programming, How to start
+          and Keep going ?.
+        </p>
+        <p class="p-3">
+          As usual let’s start with the today blog post’s agenda or table of
+          contents.
+        </p>
+      </div>
+      <div class="table-of-content-container vertical-flex">
+        <p><strong>Table of Contents</strong></p>
+        <ol class="table-of-content vertical-flex">
+          <li>
+            <a href="#what-is-competitive-programming" class="p-3"
+              >What is Competitive Programming ?</a
+            >
+          </li>
+          <li>
+            <a href="#why-competitive-programming" class="p-3"
+              >Why Competitive Programming ?</a
+            >
+          </li>
+          <li>
+            <a href="#how-to-start-competitive-programming" class="p-3"
+              >How to start Competitive Programming ?</a
+            >
+          </li>
+          <li>
+            <a href="#how-to-keep-going" class="p-3">How to keep going ?</a>
+          </li>
+          <li>
+            <a href="#where-to-practice" class="p-3">Where to Practice ?</a>
+          </li>
+          <li>
+            <a href="#books-to-learn-competitive-programming" class="p-3"
+              >Books to Learn Competitive Programming</a
+            >
+          </li>
+          <li>
+            <a
+              href="#youtube-channels-to-learn-competitive-programming"
+              class="p-3"
+              >YouTube Channels to Learn Competitive Programming</a
+            >
+          </li>
+          <li><a href="#conclusion" class="p-3">Conclusion</a></li>
+        </ol>
+      </div>
       <section>
-        <h2 id="what-is-competitive-programming-">
+        <h2 id="what-is-competitive-programming-" class="h-3">
           What is Competitive Programming ?
         </h2>
-        <p>
+        <p class="p-2">
           Competitive programming is a mind sport usually held over the Internet
           or a local network, involving participants trying to program according
           to provided specifications. Contestants are referred to as sport
@@ -110,7 +132,7 @@
           several multinational software and Internet companies, which often use
           it as a form of recruiting.
         </p>
-        <p>
+        <p class="p-2">
           Actually many programmers at the beginning of their career start with
           competitive programming, and then they move to the industry. So, it is
           a good way to start your career as a programmer too. Even the Big Tech
@@ -122,24 +144,26 @@
         </p>
       </section>
       <section>
-        <h2 id="why-competitive-programming-">Why Competitive Programming ?</h2>
-        <p>
+        <h2 id="why-competitive-programming-" class="h-3">
+          Why Competitive Programming ?
+        </h2>
+        <p class="p-2">
           As i tried to explain above, competitive programming is a good way to
           start your career as a programmer. But there are many other reasons to
           start competitive programming.
         </p>
-        <p>
+        <p class="p-2">
           As a programmer you not just coding to make something work, you need
           to be able to solve a real world problems. You need to write an
           efficient code. You need to be able to think in a different way.
         </p>
-        <p>
+        <p class="p-2">
           Competitive programming is a good way to improve your problem solving
           skills. You will learn how to think in a different way. You don’t want
           to write a code that works, you want to write a code that works fast.
           You will learn how to write efficient code.
         </p>
-        <p>
+        <p class="p-2">
           Now a days even milliseconds matter. If you are working on a project
           and you need to make it faster, you will need to write efficient code.
           If you are a developer in your company and you are assigned to a
@@ -148,34 +172,38 @@
           algorithm to solve this problem like Dijkstra’s algorithm or will you
           just write a code that works ?
         </p>
-        <p>
+        <p class="p-2">
           What if the data is millions of ordered data, and you are working on a
           feature that will find the data by id? will you go through all the
           data to find the data or will you use a data structure that will help
           you to find the data in O(log n) time?
         </p>
-        <p>
+        <p class="p-2">
           If you are still reading i think we are on the same page why we need
           to start competitive programming.
         </p>
-        <p>To summarize why we need to start competitive programming:</p>
-        <pre><code>- To improve our problem solving skills.
+        <p class="p-2">
+          To summarize why we need to start competitive programming:
+        </p>
+        <pre><code class="p-3">- To improve our problem solving skills.
+
             - To learn how to think in a different way.
-            - (emphasis on this)To join the Big Tech Giants like Google, Facebook, Amazon, Microsoft, etc.
+            - (emphasis on this)To join the Big Tech Giants like Google, 
+                  Facebook, Amazon, Microsoft, etc.
             - To learn how to write efficient code.
             - To learn how to write a code that works fast.
             - (😜) To impress your friends.
         </code></pre>
       </section>
       <section>
-        <h2 id="how-to-start-competitive-programming-">
+        <h2 id="how-to-start-competitive-programming-" class="h-3">
           How to start Competitive Programming ?
         </h2>
-        <p>
+        <p class="p-2">
           Now we know why we need to start competitive programming, let’s talk
           about how to start competitive programming.
         </p>
-        <p>
+        <p class="p-2">
           Before starting competitive programming journey, we need to know
           programming language first. There are multiple programming languages,
           but the most popular programming languages are C++, Java, Python, etc.
@@ -184,7 +212,7 @@
           with programming, i recommend you to start with C++. Or you can go
           with Java or any of your favorite programming language choice.
         </p>
-        <p>
+        <p class="p-2">
           After you choose your programming language, we need to start learning
           from different source. Personally i would recommend you to start with
           learning
@@ -193,46 +221,48 @@
             - Data Structures
             - Algorithms
       </code></pre>
-        <p>
+        <p class="p-2">
           You can learn these topics from different sources like books, YouTube
           channels, etc. I will list some of the resources at the end of this
           blog post.
         </p>
-        <p>
+        <p class="p-2">
           After learning those thing(it doesn’t mean you must master them) or be
           comfortable with them, you can start practicing competitive
           programming. I will list some of the resources at the end of this blog
           post.
         </p>
-        <p><strong>Important Points</strong></p>
-        <ol>
-          <li><strong>You must not compare yourself with others.</strong></li>
-          <li>
+        <p class="p-2"><strong>Important Points</strong></p>
+        <ol class="p-3">
+          <li class="p-3">
+            <strong>You must not compare yourself with others.</strong>
+          </li>
+          <li class="p-3">
             <strong
               >You must not expect yourself to be a master in a few month or
               weeks</strong
             >
           </li>
-          <li><strong>You must not give up.</strong></li>
+          <li class="p-3"><strong>You must not give up.</strong></li>
         </ol>
       </section>
       <section>
-        <h2 id="how-to-keep-going-">How to keep going ?</h2>
-        <p>
+        <h2 id="how-to-keep-going-" class="h-3">How to keep going ?</h2>
+        <p class="p-2">
           You know sometimes doing competitive programming might feel like you
           are doing nothing except you solve problems and submit them to the
           contest or the site. Or sometimes it really gets frustrating when you
           are not able to solve a problem. But you must not give up. You must
           keep going. You must keep practicing. You must keep learning.
         </p>
-        <p>
+        <p class="p-2">
           Even if you feel those things, remember these skill you are developing
           now will be the shield and sword for you in the future. You will be
           able to solve real world problems. While others are struggling to
           solve a problem. You will find yourself on the top of your team or
           your area.
         </p>
-        <p>
+        <p class="p-2">
           Think big, you might not always develop some kind of CRUD application
           or some kind of web application. You might develop a system that will
           help millions of people. You might get involved in a project that will
@@ -243,43 +273,51 @@
           is brand new database system, or a very low level system that requires
           a mind of problem solver programmer like you.
         </p>
-        <p>
+        <p class="p-2">
           So keep going, keep practicing, keep learning. You will be able to do
           it.
         </p>
       </section>
       <section>
-        <h2 id="where-to-practice-">Where to Practice ?</h2>
-        <p>
+        <h2 id="where-to-practice-" class="h-3">Where to Practice ?</h2>
+        <p class="p-2">
           Currentley there are many sites that you can practice competitive
           programming. I will list some of them below. All of them has a lot of
           problems and contests
         </p>
         <ol>
           <li>
-            <a href="https://codeforces.com/" target="_blank">Codeforces</a>
+            <a href="https://codeforces.com/" target="_blank" class="p-2"
+              >Codeforces</a
+            >
           </li>
         </ol>
-        <p>
+        <p class="p-2">
           This one might be the most popular site to practice competitive
           programming. Honestly speaking it is also the most challenging site to
           practice competitive programming.
         </p>
         <ol start="2">
           <li>
-            <a href="https://www.hackerrank.com/" target="_blank">Hackerrank</a>
+            <a href="https://www.hackerrank.com/" target="_blank" class="p-2"
+              >Hackerrank</a
+            >
           </li>
         </ol>
-        <p>
+        <p class="p-2">
           Hackerrank might be my recommendation for you if you are a beginner.
           It also has a lot of tutorials and articles that you can read to learn
           more about competitive programming. It also has some kind of job board
           where you can apply for jobs.
         </p>
         <ol start="3">
-          <li><a href="https://leetcode.com/" target="_blank">Leetcode</a></li>
+          <li>
+            <a href="https://leetcode.com/" target="_blank" class="p-2"
+              >Leetcode</a
+            >
+          </li>
         </ol>
-        <p>
+        <p class="p-2">
           Leetcode is the most popular site for recruiters to recruit new
           employees. If you know someone who is preparing for interviews in big
           tech companies, they will probably use Leetcode to practice. It is
@@ -287,7 +325,11 @@
           problems too.
         </p>
         <ol start="4">
-          <li><a href="https://open.kattis.com/" target="_blank">Kattis</a></li>
+          <li>
+            <a href="https://open.kattis.com/" target="_blank" class="p-2"
+              >Kattis</a
+            >
+          </li>
         </ol>
         <p>
           Personal favorite of mine. It is beginner friendly too. It is a very
@@ -296,12 +338,12 @@
         </p>
         <ol start="5">
           <li>
-            <a href="https://www.hackerearth.com/" target="_blank"
+            <a href="https://www.hackerearth.com/" target="_blank" class="p-2"
               >HackerEarth</a
             >
           </li>
         </ol>
-        <p>
+        <p class="p-2">
           HackerEarth is known for their amazing tutorials per on algorithms and
           data structures like
           <a href="https://www.hackerrank.com/" target="_blank">Hackerank</a> .
@@ -309,28 +351,32 @@
           <a
             href="https://www.hackerearth.com/practice/algorithms/"
             target="_blank"
+            class="p-2"
             >Algorithms</a
           >
           and
           <a
             href="https://www.hackerearth.com/practice/data-structures/"
             target="_blank"
+            class="p-2"
             >Data Structures</a
           >
           section.
         </p>
         <ol start="7">
           <li>
-            <a href="https://www.topcoder.com/" target="_blank">Topcoder</a>
+            <a href="https://www.topcoder.com/" target="_blank" class="p-2"
+              >Topcoder</a
+            >
           </li>
         </ol>
-        <p>
+        <p class="p-2">
           Topcoder might be a little bit different from other sites and
           unfriendly for beginners. But it is a good site to practice
           competitive programming. They have really good hard problems and the
           solution is also available. You can learn a lot from their problems.
         </p>
-        <p>
+        <p class="p-2">
           <strong
             >Am just gonna mention the rest of the site i know. You can check
             them out too.</strong
@@ -338,35 +384,49 @@
         </p>
         <ol start="8">
           <li>
-            <a href="https://www.codechef.com/" target="_blank">Codechef</a>
-          </li>
-          <li><a href="https://atcoder.jp/" target="_blank">AtCoder</a></li>
-          <li><a href="https://www.spoj.com/" target="_blank">SPOJ</a></li>
-          <li>
-            <a href="https://codesignal.com/" target="_blank">CodeSignal</a>
+            <a href="https://www.codechef.com/" target="_blank" class="p-2"
+              >Codechef</a
+            >
           </li>
           <li>
-            <a href="https://www.codingame.com/" target="_blank">CodinGame</a>
+            <a href="https://atcoder.jp/" target="_blank" class="p-2"
+              >AtCoder</a
+            >
+          </li>
+          <li>
+            <a href="https://www.spoj.com/" target="_blank" class="p-2">SPOJ</a>
+          </li>
+          <li>
+            <a href="https://codesignal.com/" target="_blank" class="p-2"
+              >CodeSignal</a
+            >
+          </li>
+          <li>
+            <a href="https://www.codingame.com/" target="_blank" class="p-2"
+              >CodinGame</a
+            >
             (My personal favorite)
           </li>
           <li>
-            <a href="https://projecteuler.net/" target="_blank"
+            <a href="https://projecteuler.net/" target="_blank" class="p-2"
               >Project Euler</a
             >
           </li>
           <li>
-            <a href="https://www.codewars.com/" target="_blank">CodeWars</a>
+            <a href="https://www.codewars.com/" target="_blank" class="p-2"
+              >CodeWars</a
+            >
           </li>
         </ol>
       </section>
       <section>
-        <h2 id="books-to-learn-competitive-programming">
+        <h2 id="books-to-learn-competitive-programming" class="h-3">
           Books to Learn Competitive Programming
         </h2>
-        <p>
+        <p class="p-2">
           There is a lot of books that you can learn competitive programming.
         </p>
-        <p>
+        <p class="p-2">
           First let’s look at the books that you can learn programming language.
         </p>
         <ol>
@@ -374,6 +434,7 @@
             <a
               href="https://www.amazon.com/Head-First-Python-Brain-Friendly-Guide/dp/1449340377"
               target="_blank"
+              class="p-2"
               >Head First Python</a
             >
           </li>
@@ -381,6 +442,7 @@
             <a
               href="https://www.amazon.com/Head-First-Java-Kathy-Sierra/dp/0596009208"
               target="_blank"
+              class="p-2"
               >Head First Java</a
             >
           </li>
@@ -388,6 +450,7 @@
             <a
               href="https://www.amazon.com/Head-First-C-Kathy-Sierra/dp/0596008678"
               target="_blank"
+              class="p-2"
               >Head First C++</a
             >
           </li>
@@ -395,11 +458,12 @@
             <a
               href="https://deitel.com/java-how-to-program-11-e-early-objects-version/"
               target="_blank"
+              class="p-2"
               >Jav how to program</a
             >
           </li>
         </ol>
-        <p>
+        <p class="p-2">
           After you learn the programming language, you can learn data
           structures and algorithms from these books.
         </p>
@@ -408,6 +472,7 @@
             <a
               href="https://www.amazon.com/Introduction-Algorithms-3rd-MIT-Press/dp/0262033844"
               target="_blank"
+              class="p-2"
               >Introduction to Algorithms</a
             >
           </li>
@@ -415,6 +480,7 @@
             <a
               href="https://www.amazon.com/Data-Structures-Algorithms-Made-Easy/dp/819324527X"
               target="_blank"
+              class="p-2"
               >Data Structures and Algorithms Made Easy</a
             >
           </li>
@@ -422,6 +488,7 @@
             <a
               href="https://www.amazon.com/Cracking-Coding-Interview-Programming-Questions/dp/0984782850"
               target="_blank"
+              class="p-2"
               >Cracking the Coding Interview</a
             >
           </li>
@@ -429,6 +496,7 @@
             <a
               href="https://www.amazon.com/Elements-Programming-Interviews-Insiders-Guide/dp/1537713949"
               target="_blank"
+              class="p-2"
               >Elements of Programming Interviews</a
             >
           </li>
@@ -436,30 +504,32 @@
             <a
               href="https://www.amazon.com/Algorithms-4th-Robert-Sedgewick/dp/032157351X"
               target="_blank"
+              class="p-2"
               >Algorithms</a
             >
           </li>
         </ol>
-        <p>
+        <p class="p-2">
           Then moving to competitive programming, you can learn competitive
           programming from these books.
         </p>
         <ol>
           <li>
-            <a href="https://cpbook.net/" target="_blank"
+            <a href="https://cpbook.net/" target="_blank" class="p-2"
               >Competitive Programming, by Steven and Felix Halim</a
             >
           </li>
-          <li>
-            <a href="https://cses.fi/book/book.pdf" target="_blank"
+          <li class="p-2">
+            <a href="https://cses.fi/book/book.pdf" target="_blank" class="p-2"
               >Competitive Programmer’s Handbook</a
             >
             Free to download
           </li>
-          <li>
+          <li class="p-2">
             <a
               href="https://comscigate.com/Books/contests/icpc.pdf"
               target="_blank"
+              class="p-2"
               >The Hitchhiker’s Guide to the Programming Contests</a
             >
             Free to download
@@ -467,17 +537,17 @@
         </ol>
       </section>
       <section>
-        <h2 id="youtube-channels-to-learn-competitive-programming">
+        <h2 id="youtube-channels-to-learn-competitive-programming" class="h-3">
           YouTube Channels to Learn Competitive Programming
         </h2>
-        <p>
+        <p class="p-2">
           So before i mentioned the good youtube channel here. There might be
           other youtube channels that you can learn competitive programming that
           i don’t know. So if you know any other youtube channel that you can
           learn competitive programming, please let me know in the comment
           section.
         </p>
-        <p>
+        <p class="p-2">
           Secondly, you gotta see winner of big competition like Google Code
           Jam, Facebook Hacker Cup, ICPCT, etc. They usually have youtube
           channel where they share their experience and tips to solve problems.
@@ -486,11 +556,12 @@
           They have youtube channel where they share their experience and tips
           to solve problems. You can learn a lot from them.
         </p>
-        <ol>
-          <li>
+        <ol class="vertical-flex youtube-suggestions">
+          <li class="vertical-flex">
             <a
               href="https://www.youtube.com/channel/UCn9ng6ZUnh5weU1BsIQoZ5w"
               target="_blank"
+              class="p-2"
               >Neetcode</a
             >
             <iframe
@@ -500,8 +571,11 @@
               allowfullscreen
             ></iframe>
           </li>
-          <li>
-            <a href="https://www.youtube.com/@Errichto" target="_blank"
+          <li class="vertical-flex">
+            <a
+              href="https://www.youtube.com/@Errichto"
+              target="_blank"
+              class="p-2"
               >Errichto</a
             >
             <iframe
@@ -511,8 +585,11 @@
               allowfullscreen
             ></iframe>
           </li>
-          <li>
-            <a href="https://www.youtube.com/@tmwilliamlin168" target="_blank"
+          <li class="vertical-flex">
+            <a
+              href="https://www.youtube.com/@tmwilliamlin168"
+              target="_blank"
+              class="p-2"
               >William Lin</a
             >
             <iframe
@@ -522,8 +599,11 @@
               allowfullscreen
             ></iframe>
           </li>
-          <li>
-            <a href="https://www.youtube.com/@SecondThread" target="_blank"
+          <li class="vertical-flex">
+            <a
+              href="https://www.youtube.com/@SecondThread"
+              target="_blank"
+              class="p-2"
               >SecondThread</a
             >
             <iframe
@@ -535,36 +615,38 @@
           </li>
         </ol>
 
-        <p>and many more.</p>
+        <p class="vertical-flex">and many more.</p>
       </section>
-      <section>
-        <h2 id="conclusion">Conclusion</h2>
-        <p>
-          So today i hope you can take away something from this post. I hope you
-          can learn competitive programming and become a better programmer.
-          Being a programmer is not just about writing code. It is also about
-          problem solving. So keep practicing, keep learning, keep improving.
-          You will be able to do it.
-        </p>
-        <p>
-          I know you can dot it. So see you crashing the interview. Good luck
-          and have fun.
-        </p>
-        <p>
-          As always, if you have any question, feel free to ask me in the
-          comment section. I will try to answer it as soon as possible. Also if
-          you have any suggestion, feel free to let me know in the comment
-          section. I will try to improve this post as soon as possible.
-        </p>
-        <p>
-          Thank you for reading this post. I hope you have a great day. See you
-          in the next post. Bye.
-        </p>
-        <p>Beka Birhnau</p>
+      <section class="section-container vertical-flex">
+        <div class="vertical-flex">
+          <h2 id="conclusion" class="h-2">Conclusion</h2>
+          <p class="p-2">
+            So today i hope you can take away something from this post. I hope
+            you can learn competitive programming and become a better
+            programmer. Being a programmer is not just about writing code. It is
+            also about problem solving. So keep practicing, keep learning, keep
+            improving. You will be able to do it.
+          </p>
+          <p class="p-2">
+            I know you can dot it. So see you crashing the interview. Good luck
+            and have fun.
+          </p>
+          <p class="p-2">
+            As always, if you have any question, feel free to ask me in the
+            comment section. I will try to answer it as soon as possible. Also
+            if you have any suggestion, feel free to let me know in the comment
+            section. I will try to improve this post as soon as possible.
+          </p>
+          <p class="p-2">
+            Thank you for reading this post. I hope you have a great day. See
+            you in the next post. Bye.
+          </p>
+        </div>
+        <p class="p-2">Beka Birhnau</p>
       </section>
     </main>
     <footer>
-      <img src="./images/logos/logo.jpg" alt="Beka Birhanu Logo" />
+      <img src="./images/logos/logo.png" alt="Beka Birhanu Logo" />
     </footer>
   </body>
 </html>

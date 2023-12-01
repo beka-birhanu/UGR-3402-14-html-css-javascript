@@ -14,33 +14,43 @@
     />
 
     <meta name="author" content="Beka Birhanu" />
-    <link rel="icon" href="./images/logos/logo.jpg" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="icon" href="./images/logos/favicon.ico" type="image/x-icon" />
+    <link
+      rel="shortcut icon"
+      href="./images/logos/favicon.ico"
+      type="image/x-icon"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,500&display=swap"
+      rel="stylesheet"
+    />
     <title>Beka | Blog</title>
   </head>
   <body>
-    <header>
-      <img src="./images/logos/logo.jpg" alt="Beka Birhanu Logo" />
-      <nav>
+    <header class="horizontal-flex blog-header">
+      <img src="./images/logos/logo.png" alt="Beka Birhanu Logo" class="logo" />
+      <nav class="mobile-hidden">
         <ul>
-          <li><a href="./index.html#hero">Home</a></li>
-          <li><a href="./index.html#about">About Me</a></li>
-          <li><a href="./index.html#skill">Skill</a></li>
-          <li><a href="./index.html#project">Projects</a></li>
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#about">About Me</a></li>
+          <li><a href="#skill">Skill</a></li>
+          <li><a href="#project">Projects</a></li>
           <li><a href="./resume.html">Resume</a></li>
           <li><a href="./blog.html">Blog</a></li>
-
-          <li><a href="./index.html#contact">Contact Me</a></li>
+          <li><a href="#contact">Contact Me</a></li>
         </ul>
       </nav>
       <button aria-label="Toggle Navigation">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
-          width="24"
-          height="24"
           viewBox="0 0 24 24"
           stroke-width="1.5"
           stroke="currentColor"
+          class="nav-icon"
         >
           <path
             stroke-linecap="round"
@@ -51,15 +61,16 @@
       </button>
     </header>
     <main>
-      <article>
-        <h1>What Developer Are Saying About Me</h1>
-        <section>
+      <article class="section-container vertical-flex">
+        <h1 class="h-1 center-text">What Developer Are Saying About Me</h1>
+        <section class="testimonial-card vertical-flex shadow-1">
           <svg
             width="33"
             height="20"
             viewBox="0 0 33 20"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
+            class="start"
           >
             <path
               d="M1.28375 19.41l-.49-.77c.42-1.6333.95667-3.57 1.61-5.81.65333-2.2867 1.35333-4.55 2.1-6.79.79333-2.28667 1.56333-4.27 2.31-5.9500041H15.3538C14.9338 2.09666 14.4904 4.26667 14.0238 6.6 13.5571 8.88666 13.1371 11.15 12.7638 13.39 12.4371 15.5833 12.1571 17.59 11.9238 19.41H1.28375zM31.69.0899959 32.18.859998C31.76 2.54 31.2233 4.5 30.57 6.74 29.9167 8.98 29.2167 11.2433 28.47 13.53 27.7233 15.77 26.9533 17.73 26.16 19.41H17.69C18.0167 17.9167 18.3433 16.33 18.67 14.65 18.9967 12.9233 19.3 11.22 19.58 9.54 19.9067 7.81333 20.1867 6.15667 20.42 4.57 20.7 2.93666 20.91 1.44333 21.05.0899959H31.69z"
@@ -67,7 +78,7 @@
             ></path>
           </svg>
           <blockquote>
-            <p>
+            <p class="p-2">
               Beka is a beacon of support, innovation, and growth in our
               community. His multifaceted contributions, ranging from technical
               expertise to personal and financial support for junior software
@@ -77,15 +88,16 @@
               positive impact on the software engineering community
             </p>
           </blockquote>
-          <h2>Ebba Birhanu</h2>
+          <h2 class="h-2 start">Ebba Birhanu</h2>
         </section>
-        <section>
+        <section class="testimonial-card vertical-flex shadow-1">
           <svg
             width="33"
             height="20"
             viewBox="0 0 33 20"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
+            class="start"
           >
             <path
               d="M1.28375 19.41l-.49-.77c.42-1.6333.95667-3.57 1.61-5.81.65333-2.2867 1.35333-4.55 2.1-6.79.79333-2.28667 1.56333-4.27 2.31-5.9500041H15.3538C14.9338 2.09666 14.4904 4.26667 14.0238 6.6 13.5571 8.88666 13.1371 11.15 12.7638 13.39 12.4371 15.5833 12.1571 17.59 11.9238 19.41H1.28375zM31.69.0899959 32.18.859998C31.76 2.54 31.2233 4.5 30.57 6.74 29.9167 8.98 29.2167 11.2433 28.47 13.53 27.7233 15.77 26.9533 17.73 26.16 19.41H17.69C18.0167 17.9167 18.3433 16.33 18.67 14.65 18.9967 12.9233 19.3 11.22 19.58 9.54 19.9067 7.81333 20.1867 6.15667 20.42 4.57 20.7 2.93666 20.91 1.44333 21.05.0899959H31.69z"
@@ -93,22 +105,23 @@
             ></path>
           </svg>
           <blockquote>
-            <p>
+            <p class="p-2">
               I highly recommend Beka for his outstanding contributions to
               software development and for his dual role as a mentor and team
               member. Our shared journey from university to the professional
               world underscores his exceptional abilities
             </p>
           </blockquote>
-          <h2>Abenezer Seifu</h2>
+          <h2 class="h-2 start">Abenezer Seifu</h2>
         </section>
-        <section>
+        <section class="testimonial-card vertical-flex shadow-1">
           <svg
             width="33"
             height="20"
             viewBox="0 0 33 20"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
+            class="start"
           >
             <path
               d="M1.28375 19.41l-.49-.77c.42-1.6333.95667-3.57 1.61-5.81.65333-2.2867 1.35333-4.55 2.1-6.79.79333-2.28667 1.56333-4.27 2.31-5.9500041H15.3538C14.9338 2.09666 14.4904 4.26667 14.0238 6.6 13.5571 8.88666 13.1371 11.15 12.7638 13.39 12.4371 15.5833 12.1571 17.59 11.9238 19.41H1.28375zM31.69.0899959 32.18.859998C31.76 2.54 31.2233 4.5 30.57 6.74 29.9167 8.98 29.2167 11.2433 28.47 13.53 27.7233 15.77 26.9533 17.73 26.16 19.41H17.69C18.0167 17.9167 18.3433 16.33 18.67 14.65 18.9967 12.9233 19.3 11.22 19.58 9.54 19.9067 7.81333 20.1867 6.15667 20.42 4.57 20.7 2.93666 20.91 1.44333 21.05.0899959H31.69z"
@@ -116,67 +129,68 @@
             ></path>
           </svg>
           <blockquote>
-            <p>
-              As a team member, Beka’s exceptional software development skills
-              shine through. He’s adept at solving complex challenges with
-              innovative solutions, ensuring project success. In addition to his
-              technical prowess, Beka’s role as a mentor has been invaluable. He
-              creates a collaborative environment that fosters growth for our
-              entire community.
+            <p class="p-2">
+              As a team member, Beka&apos;s exceptional software development
+              skills shine through. He&apos;s adept at solving complex
+              challenges with innovative solutions, ensuring project success. In
+              addition to his technical prowess, Beka&apos;s role as a mentor
+              has been invaluable. He creates a collaborative environment that
+              fosters growth for our entire community.
             </p>
           </blockquote>
-          <h2>Ephrem Mamo</h2>
+          <h2 class="h-2 start">Ephrem Mamo</h2>
         </section>
       </article>
-      <article>
-        <h1>Blog Posts</h1>
-        <section>
-          <img
-            src="./images/Blog/reimagining-my-journey.webp"
-            alt="digital image with reset button being clicked"
-            height="150"
-          />
-          <h2>Reimagining My Journey</h2>
-          <p>What I would do if I were to start my career again</p>
-          <a href="./blog-detail.html">Read More</a>
-        </section>
-        <section>
-          <img
-            src="./images/Blog/remotework-wo-title.webp"
-            alt="digital art that compares a person in home and in offiece"
-            height="150"
-          />
-          <h2>Remote VS. Office</h2>
-          <p>Reflecting on My Journey as a Software</p>
-          <a href="./blog-detail.html">Read More</a>
-        </section>
-        <section>
-          <img
-            src="./images/Blog/vercel_deployment.webp"
-            alt="digital art that represents deployment from local machine to github then vercel"
-            height="150"
-          />
-          <h2>Deploy telegram bot on Vercel(Python)</h2>
-          <p>Looking for a way to deploy your telegram bot on Vercel?</p>
-          <a href="./blog-detail.html">Read More</a>
-        </section>
-        <section>
+      <article class="section-container vertical-flex">
+        <h1 class="title blue center-text start">Blog Posts</h1>
+        <section class="story-card vertical-flex shadow-1">
           <img
             src="./images/Blog/Competitive-Programming.webp"
             alt="digital art that represent rank"
-            height="150"
           />
-          <h2>Competitive Programming, How to start and Keep going</h2>
-          <p>
+          <h2 class="h-3 start">
+            Competitive Programming, How to start and Keep going
+          </h2>
+          <p class="start">
             Do you wanna know how i my programming journey started? Let’s find
             out
           </p>
-          <a href="./blog-detail.html">Read More</a>
+          <a href="./blog-detail.html" class="end btn-secondary">Read More</a>
+        </section>
+        <section class="story-card vertical-flex shadow-1">
+          <img
+            src="./images/Blog/reimagining-my-journey.webp"
+            alt="digital image with reset button being clicked"
+          />
+          <h2 class="h-3 start">Reimagining My Journey</h2>
+          <p class="start">
+            What I would do if I were to start my career again
+          </p>
+          <a href="./blog-detail.html" class="btn-secondary start">Read More</a>
+        </section>
+        <section class="story-card vertical-flex shadow-1">
+          <img
+            src="./images/Blog/remotework-wo-title.webp"
+            alt="digital art that compares a person in home and in offiece"
+          />
+          <h2 class="h-3 start">Remote VS. Office</h2>
+          <p class="start">Reflecting on My Journey as a Software</p>
+          <a href="./blog-detail.html" class="end btn-secondary">Read More</a>
+        </section>
+        <section class="story-card vertical-flex shadow-1">
+          <img
+            src="./images/Blog/vercel_deployment.webp"
+            alt="digital art that represents deployment from local machine to github then vercel"
+          />
+          <h2 class="h-3 start">Deploy telegram bot on Vercel(Python)</h2>
+          <p class="start">
+            Looking for a way to deploy your telegram bot on Vercel?
+          </p>
+          <a href="./blog-detail.html" class="start btn-secondary">Read More</a>
         </section>
       </article>
-      <nav aria-label="Pagination">
+      <nav aria-label="Pagination" class="pagination">
         <a href="/blog/" aria-label="Pagination Arrow">
-          <span>Previous</span>
           <svg
             viewBox="0 0 20 20"
             fill="currentcolor"
@@ -190,8 +204,9 @@
               clip-rule="evenodd"
             ></path>
           </svg>
+          <span>Previous</span>
         </a>
-        <span aria-current="page">1</span>
+        <span aria-current="page" class="current-page">1</span>
         <a href="/blog/" aria-current="page">2</a>
         <a href="/blog/page/3/" aria-current="page">3</a>
         <a href="/blog/page/3/" aria-label="Pagination Arrow"
@@ -213,7 +228,7 @@
       </nav>
     </main>
     <footer>
-      <img src="./images/logos/logo.jpg" alt="Beka Birhanu Logo" />
+      <img src="./images/logos/logo.png" alt="Beka Birhanu Logo" />
     </footer>
   </body>
 </html>
