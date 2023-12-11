@@ -74,8 +74,9 @@
 .btn--primary {
   background-color: rgba(0, 0, 0, 0);
   background-image: linear-gradient(
-    rgb(112, 157, 255) rgb(86, 81, 229),
-    to right
+    to right,
+    rgb(86, 81, 229),
+    rgb(112, 157, 255)
   );
   border: none;
   color: rgb(243, 244, 246) !important;
@@ -151,8 +152,9 @@
   align-items: center;
   background-color: rgba(0, 0, 0, 0);
   background-image: linear-gradient(
-    rgb(112, 157, 255) rgb(86, 81, 229),
-    to right
+    to right,
+    rgb(86, 81, 229),
+    rgb(112, 157, 255)
   );
   border-radius: 9px;
   color: #fff;
