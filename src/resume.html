@@ -14,7 +14,6 @@
     />
 
     <meta name="author" content="Beka Birhanu" />
-    <link rel="stylesheet" href="./css/styles.css" />
     <link rel="icon" href="./images/logos/favicon.ico" type="image/x-icon" />
     <link
       rel="shortcut icon"
@@ -27,58 +26,95 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,500&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="./css/general.css" />
+    <link rel="stylesheet" href="./css/components.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
     <title>Beka | Resume</title>
   </head>
   <body>
-    <header class="horizontal-flex">
-      <img src="./images/logos/logo.png" alt="Beka Birhanu Logo" class="logo" />
-      <nav class="mobile-hidden">
-        <ul>
-          <li><a href="#hero">Home</a></li>
-          <li><a href="#about">About Me</a></li>
-          <li><a href="#skill">Skill</a></li>
-          <li><a href="#project">Projects</a></li>
-          <li><a href="./resume.html">Resume</a></li>
-          <li><a href="./blog.html">Blog</a></li>
-          <li><a href="#contact">Contact Me</a></li>
-        </ul>
-      </nav>
-      <button aria-label="Toggle Navigation">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke-width="1.5"
-          stroke="currentColor"
-          class="nav-icon"
+    <header>
+      <div class="header horizontal-flex">
+        <img
+          src="./images/logos/logo.png"
+          alt="Beka Birhanu Logo"
+          class="header__logo"
+        />
+        <nav class="mobile-hidden">
+          <ul class="header__nav">
+            <li>
+              <a href="./index.html" class="header__nav_anchor p-1">Home</a>
+            </li>
+            <li>
+              <a href="./index.html#about" class="header__nav_anchor p-1"
+                >About</a
+              >
+            </li>
+            <li>
+              <a href="./index.html#skill" class="header__nav_anchor p-1"
+                >Skill</a
+              >
+            </li>
+            <li>
+              <a href="./index.html#project" class="header__nav_anchor p-1"
+                >Projects</a
+              >
+            </li>
+            <li>
+              <a href="./resume.html" class="header__nav_anchor p-1">Resume</a>
+            </li>
+            <li>
+              <a href="./blog.html" class="header__nav_anchor p-1">Blog</a>
+            </li>
+            <li>
+              <a
+                href="./index.html#contact"
+                class="header__nav_anchor header__nav_anchor--contact btn p-1"
+                >Contact Me</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <button
+          aria-label="Toggle Navigation"
+          class="btn--headerNav only-mobile"
         >
-          <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
-          />
-        </svg>
-      </button>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="nav-icon"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+            />
+          </svg>
+        </button>
+      </div>
     </header>
-    <main>
-      <h1 class="center-text title">Resume</h1>
-      <article id="resume-article" class="vertical-flex">
-        <div class="horizontal-flex resume-header">
+    <main class="vertical-flex">
+      <div class="resume__body main-container">
+        <h1 id="resume" class="center-text title">Resume</h1>
+        <div class="resume__header horizontal-flex">
           <h2 class="h-2">Beka Birhanu</h2>
           <nav>
-            <ul class="socila-media-nav horizontal-flex">
+            <ul class="socila-media-nav--resume horizontal-flex">
               <li>
                 <a
                   href="https://github.com/beka-birhanu"
                   target="_blank"
                   rel="noreferrer"
                   aria-label="github"
-                  class="socila-media-links"
+                  class="socila-media-nav__a"
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill="#000000"
                     viewBox="0 0 256 256"
+                    class="socila-media-nav__a__icon"
                   >
                     <path
                       d="M208.31,75.68A59.78,59.78,0,0,0,202.93,28,8,8,0,0,0,196,24a59.75,59.75,0,0,0-48,24H124A59.75,59.75,0,0,0,76,24a8,8,0,0,0-6.93,4,59.78,59.78,0,0,0-5.38,47.68A58.14,58.14,0,0,0,56,104v8a56.06,56.06,0,0,0,48.44,55.47A39.8,39.8,0,0,0,96,192v8H72a24,24,0,0,1-24-24A40,40,0,0,0,8,136a8,8,0,0,0,0,16,24,24,0,0,1,24,24,40,40,0,0,0,40,40H96v16a8,8,0,0,0,16,0V192a24,24,0,0,1,48,0v40a8,8,0,0,0,16,0V192a39.8,39.8,0,0,0-8.44-24.53A56.06,56.06,0,0,0,216,112v-8A58.14,58.14,0,0,0,208.31,75.68ZM200,112a40,40,0,0,1-40,40H112a40,40,0,0,1-40-40v-8a41.74,41.74,0,0,1,6.9-22.48A8,8,0,0,0,80,73.83a43.81,43.81,0,0,1,.79-33.58,43.88,43.88,0,0,1,32.32,20.06A8,8,0,0,0,119.82,64h32.35a8,8,0,0,0,6.74-3.69,43.87,43.87,0,0,1,32.32-20.06A43.81,43.81,0,0,1,192,73.83a8.09,8.09,0,0,0,1,7.65A41.72,41.72,0,0,1,200,104Z"
@@ -92,12 +128,13 @@
                   target="_blank"
                   rel="noreferrer"
                   aria-label="linkedin"
-                  class="socila-media-links"
+                  class="socila-media-nav__a"
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     x="0px"
                     y="0px"
+                    class="socila-media-nav__a__icon"
                     viewBox="0 0 50 50"
                   >
                     <path
@@ -109,374 +146,381 @@
             </ul>
           </nav>
         </div>
-        <section class="section-container">
-          <div class="mobile-hidden">
-            <h1>
-              Machine learning <span>|</span> Web Development
-              <span>|</span> Problem Solving
-            </h1>
-          </div>
-          <div>
-            <h2 class="h-2 center-text interested-in">
-              Machine learning <br />
-              Web Development <br />
-              Problem Solving
-            </h2>
-          </div>
-          <p class="p-2">
-            A dedicated Full Stack Web Developer passionate about turning ideas
-            into elegant, functional web solutions. Specializing in back-end
-            development, I build the engines that power seamless applications.
-            With a design-focused approach to front-end development, I bring
-            creativity to user interfaces. As a highly motivated 3rd-year
-            software engineering student, I am continuously honing my skills and
-            knowledge in this ever-evolving field. My excitement lies in the
-            prospect of delving into the realms of machine learning, aspiring to
-            harness the power of intelligence in shaping the future of
-            technology. Let's connect and embark on a journey of innovation
-            together!
-          </p>
-        </section>
-        <section class="resume-skill vertical-flex">
-          <h2 class="h-2 center-text">Skills</h2>
-          <table class="center-text">
-            <tr>
-              <th colspan="4" class="h-3">Hard Skills</th>
-            </tr>
-            <tr>
-              <th rowspan="2" class="h-3">Web Development</th>
-              <td class="p-2">html</td>
-              <td class="p-2">CSS</td>
-              <td class="p-2">Bootstrap</td>
-            </tr>
-            <tr>
-              <td class="p-2">JavaScript</td>
-              <td class="p-2">React JS</td>
-              <td class="p-2">Java</td>
-            </tr>
-            <tr>
-              <th rowspan="2" class="h-3">Machine Learning</th>
-              <td class="p-2">Git</td>
-              <td class="p-2">Github</td>
-              <td class="p-2">Pyhton</td>
-            </tr>
-            <tr>
-              <td class="p-2">Django</td>
-              <td class="p-2">Numpy</td>
-              <td class="p-2">Pandas</td>
-            </tr>
-          </table>
-          <table class="center-text">
-            <tr>
-              <th colspan="3" class="h-3">Soft Skills</th>
-            </tr>
-            <tr>
-              <td class="p-2">creativity</td>
-              <td class="p-2">Critical Thinking</td>
-              <td class="p-2">Problem Solving</td>
-            </tr>
-            <tr>
-              <td class="p-2">Communication</td>
-              <td class="p-2">Teamwork</td>
-              <td class="p-2">Time Managment</td>
-            </tr>
-          </table>
-        </section>
-      </article>
-      <article id="education" class="vertical-flex">
-        <h2 class="h-2 center-text">Education</h2>
-        <section class="education-section vertical-flex">
-          <div class="horizontal-flex">
-            <h3 class="h-3">
-              Bachelor of Science in Software Engineering (<abbr
-                title="Addis Ababa inistitute of Technology"
-                >AAiT</abbr
-              >)
-            </h3>
-            <p class="p-1">
-              <time datetime="2021-09-09">Sep 2021</time>
-              <span>-</span> Present
+        <article class="vertical-flex section-container">
+          <section class="vertical-flex section-container">
+            <div class="mobile-hidden">
+              <h1 class="h-2 center-text">
+                Machine learning <span>|</span> Web Development
+                <span>|</span> Problem Solving
+              </h1>
+            </div>
+            <div>
+              <h2 class="h-2 center-text interested-in only-mobile">
+                Machine learning <br />
+                Web Development <br />
+                Problem Solving
+              </h2>
+            </div>
+            <p class="p-2">
+              A dedicated Full Stack Web Developer passionate about turning
+              ideas into elegant, functional web solutions. Specializing in
+              back-end development, I build the engines that power seamless
+              applications. With a design-focused approach to front-end
+              development, I bring creativity to user interfaces. As a highly
+              motivated 3rd-year software engineering student, I am continuously
+              honing my skills and knowledge in this ever-evolving field. My
+              excitement lies in the prospect of delving into the realms of
+              machine learning, aspiring to harness the power of intelligence in
+              shaping the future of technology. Let's connect and embark on a
+              journey of innovation together!
             </p>
-          </div>
+          </section>
+          <section class="resume-skill vertical-flex">
+            <h2 class="h-2 center-text">Skills</h2>
+            <div class="resume-skill__tables grid">
+              <table class="resume-skill__tables__table">
+                <tr>
+                  <th colspan="4" c1ass="p-3">Hard Skills</th>
+                </tr>
+                <tr>
+                  <td class="p-1">html</td>
+                  <td class="p-1">CSS</td>
+                  <td class="p-1">Bootstrap</td>
+                </tr>
+                <tr>
+                  <td class="p-1">JavaScript</td>
+                  <td class="p-1">React JS</td>
+                  <td class="p-1">Java</td>
+                </tr>
+                <tr>
+                  <td class="p-1">Git</td>
+                  <td class="p-1">Github</td>
+                  <td class="p-1">Pyhton</td>
+                </tr>
+                <tr>
+                  <td class="p-1">Django</td>
+                  <td class="p-1">Numpy</td>
+                  <td class="p-1">Pandas</td>
+                </tr>
+              </table>
+              <table class="resume-skill__tables__table">
+                <tr>
+                  <th colspan="3" class="p-3">Soft Skills</th>
+                </tr>
+                <tr>
+                  <td class="p-1">creativity</td>
+                  <td class="p-1">Critical Thinking</td>
+                  <td class="p-1">Problem Solving</td>
+                </tr>
+                <tr>
+                  <td class="p-1">Communication</td>
+                  <td class="p-1">Teamwork</td>
+                  <td class="p-1">Time Managment</td>
+                </tr>
+              </table>
+            </div>
+          </section>
+        </article>
+        <article class="resume__topic vertical-flex section-container">
+          <h2 class="h-2 center-text">Education</h2>
+          <section class="resume__topic__section vertical-flex start">
+            <div class="resume__topic__section__header horizontal-flex">
+              <h3 class="h-3">
+                Bachelor of Science in Software Engineering (<abbr
+                  title="Addis Ababa inistitute of Technology"
+                  >AAiT</abbr
+                >)
+              </h3>
+              <p class="p-1">
+                <time datetime="2021-09-09">Sep 2021</time>
+                <span>-</span> Present
+              </p>
+            </div>
 
-          <ul>
-            <li>
-              <p class="p-3">
-                Current
-                <abbr title="Comulative Grade Point Avarage">CGPA</abbr> : 3.95
+            <ul class="resume__topic__section__list start">
+              <li>
+                <p class="p-3">
+                  Current
+                  <abbr title="Comulative Grade Point Avarage">CGPA</abbr> :
+                  3.95
+                </p>
+              </li>
+              <li>
+                <p class="p-3">
+                  Exceptional Academic Performance:
+                  <br /><strong
+                    >Achieved a 4.0 GPA in three out of four semesters.</strong
+                  >
+                </p>
+              </li>
+            </ul>
+          </section>
+          <section class="resume__topic__section vertical-flex">
+            <div class="resume__topic__section__header horizontal-flex">
+              <h3 class="h-3">
+                Coummunity Education Program (<abbr
+                  title="Africa to Silicon Valley"
+                  >A2SV</abbr
+                >)
+              </h3>
+              <p class="p-1">
+                <time datetime="2023-05-20">May 2023</time>
+                <span>-</span>
+                <time datetime="2023-11-01">November 2023</time>
               </p>
-            </li>
-            <li>
-              <p class="p-3">
-                Exceptional Academic Performance:<strong
-                  >Achieved a 4.0 GPA in three out of four semesters.</strong
-                >
-              </p>
-            </li>
-          </ul>
-        </section>
-        <section class="education-section vertical-flex">
-          <div class="horizontal-flex">
-            <h3 class="h-3">
-              Coummunity Education Program (<abbr
-                title="Africa to Silicon Valley"
-                >A2SV</abbr
-              >)
-            </h3>
-            <p class="p-1">
-              <time datetime="2023-05-20">May 2023</time>
-              <span>-</span>
-              <time datetime="2023-11-01">November 2023</time>
-            </p>
-          </div>
+            </div>
 
-          <ul>
-            <li>
-              <p class="p-2">
-                I was initiated as a Division 2 student and subsequently
-                promoted to Division 1 during the second promotion season.
+            <ul class="resume__topic__section__list start">
+              <li>
+                <p class="p-2">
+                  I was initiated as a Division 2 student and subsequently
+                  promoted to Division 1 during the second promotion season.
+                </p>
+              </li>
+              <li>
+                <p class="p-2">
+                  I successfully solved <strong>over 250</strong> data structure
+                  and algorithm questions on platforms like LeetCode, Codeforces
+                  and HackerRank, demonstrating a high level of proficiency in
+                  this area.
+                </p>
+              </li>
+              <li>
+                <p class="p-2">
+                  This experience has not only advanced my technical knowledge
+                  but also honed my problem-solving and communication abilities,
+                  making me well-prepared for future challenges in the field.
+                </p>
+              </li>
+            </ul>
+          </section>
+          <section class="resume__topic__section vertical-flex">
+            <div class="resume__topic__section__header horizontal-flex">
+              <h3 class="h-3">
+                In-Person Education Program (<abbr
+                  title="Africa to Silicon Valley"
+                  >A2SV</abbr
+                >)
+              </h3>
+              <p class="p-1">
+                <time datetime="2023-12-01">December 2023</time>
+                <span>-</span> Present
               </p>
-            </li>
-            <li>
-              <p class="p-2">
-                I successfully solved <strong>over 250</strong> data structure
-                and algorithm questions on platforms like LeetCode, Codeforces
-                and HackerRank, demonstrating a high level of proficiency in
-                this area.
-              </p>
-            </li>
-            <li>
-              <p class="p-2">
-                This experience has not only advanced my technical knowledge but
-                also honed my problem-solving and communication abilities,
-                making me well-prepared for future challenges in the field.
-              </p>
-            </li>
-          </ul>
-        </section>
-        <section class="education-section vertical-flex">
-          <div class="horizontal-flex">
-            <h3 class="h-3">
-              In-Person Education Program (<abbr
-                title="Africa to Silicon Valley"
-                >A2SV</abbr
-              >)
-            </h3>
-            <p class="p-1">
-              <time datetime="2023-12-01">December 2023</time>
-              <span>-</span> Present
-            </p>
-          </div>
+            </div>
 
-          <ul>
-            <li>
-              <p class="p-2">
-                I was awarded a direct seat in the Community Education Program
-                at A2SV due to my extraordinary performance and commitment,
-                bypassing the interview process.
+            <ul class="resume__topic__section__list start">
+              <li>
+                <p class="p-2">
+                  I was awarded a direct seat in the Community Education Program
+                  at A2SV due to my extraordinary performance and commitment,
+                  bypassing the interview process.
+                </p>
+              </li>
+              <li>
+                <p class="p-2">
+                  During my time in the program, I have significantly enhanced
+                  my skills. I've successfully solved more than double the
+                  number of data structure and algorithm questions compared to
+                  my achievements in the Community Education Program. Platforms
+                  like LeetCode, Codeforces, and HackerRank have been invaluable
+                  resources in sharpening my problem-solving abilities.
+                </p>
+              </li>
+              <li>
+                <p class="p-2">
+                  This immersive experience has not only expanded my technical
+                  knowledge but has also provided me with advanced skills in
+                  interview preparation and time management. These additional
+                  skills make me well-equipped to tackle challenges in the
+                  ever-evolving field of technology.
+                </p>
+              </li>
+            </ul>
+          </section>
+        </article>
+        <article class="resume__topic vertical-flex section-container">
+          <h2 class="h-2">Experiences</h2>
+          <section class="resume__topic__section vertical-flex start">
+            <div class="resume__topic__section__header horizontal-flex">
+              <h3 class="h-3">
+                Volunteer Tutor Hi-tech Academy <span>-</span> High School
+              </h3>
+              <p class="p-1">
+                <time datetime="2023-06-01">Jun 2023</time> <span>-</span
+                ><time datetime="2023-07-20">Aug 2023</time>
               </p>
-            </li>
-            <li>
-              <p class="p-2">
-                During my time in the program, I have significantly enhanced my
-                skills. I've successfully solved more than double the number of
-                data structure and algorithm questions compared to my
-                achievements in the Community Education Program. Platforms like
-                LeetCode, Codeforces, and HackerRank have been invaluable
-                resources in sharpening my problem-solving abilities.
+            </div>
+            <ul class="resume__topic__section__list start">
+              <li>
+                <p>
+                  <strong>Volunteered</strong> to teach Introduction to
+                  Programming at my alma mater
+                </p>
+              </li>
+              <li>
+                <p>
+                  Designed and delivered engaging lessons on programming
+                  fundamentals <strong>using Python</strong>
+                </p>
+              </li>
+              <li>
+                <p>
+                  Strengthened my teaching and programming skills while making a
+                  positive impact on the students and community
+                </p>
+              </li>
+              <li>
+                <p>
+                  This experience affirmed my passion for computer science and
+                  education, motivating me to continue learning and growing in
+                  the field.
+                </p>
+              </li>
+            </ul>
+          </section>
+          <section class="resume__topic__section vertical-flex start">
+            <div class="resume__topic__section__header horizontal-flex">
+              <h3 class="h-3">Developing IDIR Managment App</h3>
+              <p class="p-1">
+                <time datetime="2023-07-01">Jul 2023</time> <span>-</span
+                ><time datetime="2023-07-20">Sep 2023</time>
               </p>
-            </li>
-            <li>
-              <p class="p-2">
-                This immersive experience has not only expanded my technical
-                knowledge but has also provided me with advanced skills in
-                interview preparation and time management. These additional
-                skills make me well-equipped to tackle challenges in the
-                ever-evolving field of technology.
+            </div>
+            <ul class="resume__topic__section__list start">
+              <li>
+                <p>
+                  Collaborating with a friend to develop a Java-based app aimed
+                  at modernizing the traditional IDIR social system in Ethiopia,
+                  with a strong commitment to community improvement.
+                </p>
+              </li>
+              <li>
+                <p>
+                  Aims to enhance IDIR record accessibility and organization for
+                  the local community.
+                </p>
+              </li>
+              <li>
+                Features
+                <ul>
+                  <li><p>Intuitive GUI for user-friendly navigation.</p></li>
+                  <li>
+                    <p>
+                      SQL database integration for efficient data management.
+                    </p>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <p>
+                  Learning <strong>Java</strong>, <strong>SQL</strong>, and
+                  <strong>Git/GitHub</strong> while actively working on the
+                  project.
+                </p>
+              </li>
+            </ul>
+            <a href="https://github.com/abe16s/IDIR" class="end"
+              >IDIR Managment App</a
+            >
+          </section>
+          <section class="resume__topic__section vertical-flex start">
+            <div class="resume__topic__section__header horizontal-flex">
+              <h3 class="h-3">Car Rental Platform Development (Vroomy)</h3>
+              <p class="p-1">
+                <time datetime="2023-10-01">Oct 2023</time>
+                <span>-</span> Present
               </p>
-            </li>
-          </ul>
-        </section>
-      </article>
-      <article id="experience" class="vertical-flex">
-        <h2 class="h-2">Experiences</h2>
-        <section class="education-section vertical-flex">
-          <div class="horizontal-flex">
-            <h3 class="h-3">
-              Volunteer Tutor Hi-tech Academy <span>-</span> High School
-            </h3>
-            <p class="p-1">
-              <time datetime="2023-06-01">Jun 2023</time> <span>-</span
-              ><time datetime="2023-07-20">Aug 2023</time>
-            </p>
-          </div>
-          <ul>
-            <li>
-              <p>
-                <strong>Volunteered</strong> to teach Introduction to
-                Programming at my alma mater
-              </p>
-            </li>
-            <li>
-              <p>
-                Designed and delivered engaging lessons on programming
-                fundamentals <strong>using Python</strong>
-              </p>
-            </li>
-            <li>
-              <p>
-                Strengthened my teaching and programming skills while making a
-                positive impact on the students and community
-              </p>
-            </li>
-            <li>
-              <p>
-                This experience affirmed my passion for computer science and
-                education, motivating me to continue learning and growing in the
-                field.
-              </p>
-            </li>
-          </ul>
-        </section>
-        <section class="education-section vertical-flex">
-          <div class="horizontal-flex">
-            <h3 class="h-3">Developing IDIR Managment App</h3>
-            <p class="p-1">
-              <time datetime="2023-07-01">Jul 2023</time> <span>-</span
-              ><time datetime="2023-07-20">Sep 2023</time>
-            </p>
-          </div>
-          <ul>
-            <li>
-              <p>
-                Collaborating with a friend to develop a Java-based app aimed at
-                modernizing the traditional IDIR social system in Ethiopia, with
-                a strong commitment to community improvement.
-              </p>
-            </li>
-            <li>
-              <p>
-                Aims to enhance IDIR record accessibility and organization for
-                the local community.
-              </p>
-            </li>
-            <li>
-              Features
-              <ul>
-                <li><p>Intuitive GUI for user-friendly navigation.</p></li>
-                <li>
-                  <p>SQL database integration for efficient data management.</p>
-                </li>
-              </ul>
-            </li>
-            <li>
-              <p>
-                Learning <strong>Java</strong>, <strong>SQL</strong>, and
-                <strong>Git/GitHub</strong> while actively working on the
-                project.
-              </p>
-            </li>
-          </ul>
-          <a href="https://github.com/abe16s/IDIR" class="end"
-            >IDIR Managment App</a
-          >
-        </section>
-        <section class="education-section vertical-flex">
-          <div class="horizontal-flex">
-            <h3 class="h-3">Car Rental Platform Development (Vroomy)</h3>
-            <p class="p-1">
-              <time datetime="2023-10-01">Oct 2023</time> <span>-</span> Present
-            </p>
-          </div>
-          <ul>
-            <li>
-              <p>
-                <strong>Led</strong> the development of a groundbreaking
-                web-based Car Rental Platform, leveraging
-                <strong>React</strong>, <strong>Bootstrap</strong>, and
-                <strong>Supabase</strong>
-                to modernize the traditional car rental system in Ethiopia.
-              </p>
-            </li>
-            <li>
-              <p>
-                Successfully implemented features to aggregate car rental
-                options, provide a user-friendly search and filtering interface,
-                ensure transparent information presentation, and incorporate a
-                rating and feedback system.
-              </p>
-            </li>
-            <li>
-              Features
-              <ul>
-                <li>
-                  <p>
-                    Utilized React for building a dynamic and responsive user
-                    interface.
-                  </p>
-                </li>
-                <li>
-                  <p>
-                    Integrated Bootstrap for a sleek and visually appealing
-                    design.
-                  </p>
-                </li>
-                <li>
-                  <p>
-                    Employed Supabase for efficient data management and database
-                    integration.
-                  </p>
-                </li>
-                <li>
-                  <p>
-                    Established a comprehensive list of rental options from
-                    various providers.
-                  </p>
-                </li>
-                <li>
-                  <p>
-                    Designed a user-friendly interface for efficient search and
-                    filtering.
-                  </p>
-                </li>
-                <li>
-                  <p>
-                    Ensured clear and transparent information presentation for
-                    customers.
-                  </p>
-                </li>
-                <li>
-                  <p>
-                    Implemented a robust rating and feedback system to enhance
-                    transparency.
-                  </p>
-                </li>
-              </ul>
-            </li>
-            <li>
-              <p>
-                Managed a team of developers, fostering effective communication
-                and collaboration.
-              </p>
-            </li>
-            <li>
-              <p>
-                Conducted risk assessments, addressing challenges related to
-                team dynamics, external dependencies, version control, scope
-                changes, and user acceptability.
-              </p>
-            </li>
-            <li>
-              <p>
-                Enhanced skills in project management, React, Bootstrap,
-                Supabase, risk assessment, and team collaboration, using tools
-                such as Git/GitHub for version control.
-              </p>
-            </li>
-          </ul>
-          <a href="https://github.com/Lemidinku/Vroomy" class="end">Vroomy</a>
-        </section>
-      </article>
+            </div>
+            <ul class="resume__topic__section__list start">
+              <li>
+                <p>
+                  <strong>Led</strong> the development of a groundbreaking
+                  web-based Car Rental Platform, leveraging
+                  <strong>React</strong>, <strong>Bootstrap</strong>, and
+                  <strong>Supabase</strong>
+                  to modernize the traditional car rental system in Ethiopia.
+                </p>
+              </li>
+              <li>
+                <p>
+                  Successfully implemented features to aggregate car rental
+                  options, provide a user-friendly search and filtering
+                  interface, ensure transparent information presentation, and
+                  incorporate a rating and feedback system.
+                </p>
+              </li>
+              <li>
+                <p class="p-3">Features</p>
+                <ul>
+                  <li>
+                    <p>
+                      Utilized React for building a dynamic and responsive user
+                      interface.
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                      Integrated Bootstrap for a sleek and visually appealing
+                      design.
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                      Employed Supabase for efficient data management and
+                      database integration.
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                      Established a comprehensive list of rental options from
+                      various providers.
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                      Designed a user-friendly interface for efficient search
+                      and filtering.
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                      Ensured clear and transparent information presentation for
+                      customers.
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                      Implemented a robust rating and feedback system to enhance
+                      transparency.
+                    </p>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <p>
+                  Managed a team of developers, fostering effective
+                  communication and collaboration.
+                </p>
+              </li>
+              <li>
+                <p>
+                  Conducted risk assessments, addressing challenges related to
+                  team dynamics, external dependencies, version control, scope
+                  changes, and user acceptability.
+                </p>
+              </li>
+              <li>
+                <p>
+                  Enhanced skills in project management, React, Bootstrap,
+                  Supabase, risk assessment, and team collaboration, using tools
+                  such as Git/GitHub for version control.
+                </p>
+              </li>
+            </ul>
+            <a href="https://github.com/Lemidinku/Vroomy" class="end">Vroomy</a>
+          </section>
+        </article>
+      </div>
     </main>
     <footer>
       <img src="./images/logos/logo.png" alt="Beka Birhanu Logo" />

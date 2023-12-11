@@ -14,7 +14,6 @@
     />
 
     <meta name="author" content="Beka Birhanu" />
-    <link rel="stylesheet" href="./css/styles.css" />
     <link rel="icon" href="./images/logos/favicon.ico" type="image/x-icon" />
     <link
       rel="shortcut icon"
@@ -27,45 +26,99 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,500&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="./css/general.css" />
+    <link rel="stylesheet" href="./css/components.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
     <title>Beka | Project</title>
   </head>
   <body>
-    <header class="horizontal-flex absolut-header">
-      <img src="./images/logos/logo.png" alt="Beka Birhanu Logo" class="logo" />
-      <nav class="mobile-hidden">
-        <ul>
-          <li><a href="#hero">Home</a></li>
-          <li><a href="#about">About Me</a></li>
-          <li><a href="#skill">Skill</a></li>
-          <li><a href="#project">Projects</a></li>
-          <li><a href="./resume.html">Resume</a></li>
-          <li><a href="./blog.html">Blog</a></li>
-          <li><a href="#contact">Contact Me</a></li>
-        </ul>
-      </nav>
-      <button aria-label="Toggle Navigation">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke-width="1.5"
-          stroke="currentColor"
-          class="nav-icon"
+    <header class="header--absolute">
+      <div class="header horizontal-flex">
+        <img
+          src="./images/logos/logo.png"
+          alt="Beka Birhanu Logo"
+          class="header__logo"
+        />
+        <nav class="mobile-hidden">
+          <ul class="header__nav">
+            <li>
+              <a
+                href="./index.html#my-info"
+                class="header__nav_anchor header__nav_anchor--white p-1"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                href="./index.html#about"
+                class="header__nav_anchor header__nav_anchor--white p-1"
+                >About</a
+              >
+            </li>
+            <li>
+              <a
+                href="./index.html#skill"
+                class="header__nav_anchor header__nav_anchor--white p-1"
+                >Skill</a
+              >
+            </li>
+            <li>
+              <a
+                href="./index.html#project"
+                class="header__nav_anchor header__nav_anchor--white p-1"
+                >Projects</a
+              >
+            </li>
+            <li>
+              <a
+                href="./resume.html"
+                class="header__nav_anchor header__nav_anchor--white p-1"
+                >Resume</a
+              >
+            </li>
+            <li>
+              <a
+                href="./blog.html"
+                class="header__nav_anchor header__nav_anchor--white p-1"
+                >Blog</a
+              >
+            </li>
+            <li>
+              <a
+                href="./index.html#contact"
+                class="header__nav_anchor header__nav_anchor--white header__nav_anchor--contact btn p-1"
+                >Contact Me</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <button
+          aria-label="Toggle Navigation"
+          class="btn--headerNav only-mobile"
         >
-          <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
-          />
-        </svg>
-      </button>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="nav-icon nav-icon--white"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+            />
+          </svg>
+        </button>
+      </div>
     </header>
-    <main id="project-main">
-      <section class="project-hero">
+    <main class="project-main">
+      <section class="project-main__project-hero">
         <h1 class="h-1">Github Finder App</h1>
         <p class="h-3">React JS <span>/</span>Bootstrap</p>
       </section>
-      <div class="project-detail-info vertical-flex">
+      <div class="project-main__project-info grid section-container">
         <section class="section-container vertical-flex">
           <div>
             <p class="p-1 start">Project</p>
@@ -82,14 +135,14 @@
             aria-label="Links to GitHub repository and deployed site of the project"
             class="start"
           >
-            <ul class="horizontal-flex project-detail-link">
+            <ul class="horizontal-flex section-container">
               <li>
                 <a
                   href="https://github.com/Ebbabire/github_finder"
                   title="View the GitHub repository for GitHub Finder project"
                   target="_blank"
                   rel="noopener noreferrer"
-                  class="btn btn-a shadow-1"
+                  class="btn--primary btn shadow-1"
                   >Code</a
                 >
               </li>
@@ -99,27 +152,24 @@
                   title="Explore the deployed site for GitHub Finder project"
                   target="_blank"
                   rel="noopener noreferrer"
-                  class="btn btn-a shadow-1"
+                  class="btn--primary btn shadow-1"
                   >Demo</a
                 >
               </li>
             </ul>
           </nav>
         </section>
-        <section id="technologies-used" class="shadow-1 vertical-flex">
+        <section class="technologies-used shadow-1 vertical-flex">
           <h2 class="h-3">technologies</h2>
-          <ul class="horizontal-flex">
-            <li>React</li>
-            <li>Tailwind</li>
-            <li>Javascript</li>
-            <li>Github API</li>
+          <ul class="technologies-used__list">
+            <li class="p-2">React</li>
+            <li class="p-2">Tailwind</li>
+            <li class="p-2">Javascript</li>
+            <li class="p-2">Github API</li>
           </ul>
         </section>
-        <a href="./index.html#project" class="start">back</a>
+        <a href="./index.html#project" class="start p-2">back</a>
       </div>
     </main>
   </body>
-  <footer>
-    <img src="./images/logos/logo.png" alt="Beka Birhanu Logo" />
-  </footer>
 </html>
