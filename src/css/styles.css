@@ -13,14 +13,14 @@
 }
 
 .my-info__hero__image {
-  position: relative;
   display: flex;
   justify-content: center;
+  position: relative;
 }
 .my-info__hero__image__a {
+  left: 8%;
   position: absolute;
   top: 50%;
-  left: 8%;
 }
 .my-info__hero__image__img {
   max-width: 32rem;
@@ -43,23 +43,22 @@
   align-self: stretch;
 }
 .get-in-touch-hero__image {
+  align-self: baseline;
   background-image: url(../images/background/web-development-header1.png);
   background-position: right;
   background-repeat: no-repeat;
   background-size: cover;
-  width: 100%;
-  padding: 6.4rem;
-
   border-radius: 9px 9px 0 0;
-  align-self: baseline;
+  padding: 6.4rem;
+  width: 100%;
 }
 .get-in-touch-hero__text {
-  padding: 1.6rem;
   display: flex;
   flex-direction: column;
   gap: 1.6rem;
-  top: 1.6rem;
   left: 1.6rem;
+  padding: 1.6rem;
+  top: 1.6rem;
 }
 .connect-with-me {
   display: flex;
@@ -84,14 +83,14 @@
   margin-right: 0;
 }
 .project-main__project-hero {
-  padding-top: 19.2rem;
-  padding-bottom: 3.2rem;
-  padding-left: 1.6rem;
   background-image: url(../images/background/project-detail-hero.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   color: #fff;
+  padding-bottom: 3.2rem;
+  padding-left: 1.6rem;
+  padding-top: 19.2rem;
 }
 .project-main__project-info {
   margin: 1.6rem;
@@ -106,16 +105,16 @@
 .technologies-used {
   border-radius: 9px;
   gap: 1.6rem;
-  width: 100%;
-  padding-left: 1.6rem;
-  padding-bottom: 2.4rem;
-  margin-top: 6.4rem;
   justify-content: center;
+  margin-top: 6.4rem;
+  padding-bottom: 2.4rem;
+  padding-left: 1.6rem;
+  width: 100%;
 }
 .technologies-used__list {
-  list-style: circle;
   display: flex;
   justify-content: space-between;
+  list-style: circle;
   width: 90%;
 }
 
@@ -138,12 +137,12 @@
   width: 100%;
 }
 .resume__topic__section__header {
-  width: 100%;
   justify-content: space-between;
+  width: 100%;
 }
 .resume__topic__section__list {
-  list-style: circle;
   line-height: 1.5;
+  list-style: circle;
   margin-left: 2.4rem;
 }
 
@@ -156,11 +155,11 @@
 }
 
 .testimonial__testimonial-card {
-  gap: 1.6rem;
-  padding: 1rem;
-  border-radius: 9px;
-  max-width: 40rem;
   align-self: flex-start;
+  border-radius: 9px;
+  gap: 1.6rem;
+  max-width: 40rem;
+  padding: 1rem;
 }
 .testimonial-card__text {
   padding-left: 1.2rem;
@@ -220,13 +219,13 @@
   }
   .technologies-used__list {
     display: grid;
-    justify-content: center;
-    grid-template-columns: 1fr;
     gap: 1.6rem;
+    grid-template-columns: 1fr;
+    justify-content: center;
   }
   .technologies-used {
-    margin-top: 0;
     justify-content: center;
+    margin-top: 0;
   }
   .youtube-suggestions {
     grid-template-columns: 1fr 1fr 1fr;
