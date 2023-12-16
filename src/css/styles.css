@@ -1,6 +1,7 @@
 /* HOME */
 
 .my-info__hero {
+  margin-top: 6.4rem;
   display: flex;
   flex-direction: column;
   row-gap: 6.4rem;
@@ -69,9 +70,31 @@
   padding: 1.6rem;
 }
 .email-me__form {
+  position: relative;
   gap: 1.2rem;
 }
-
+.email-me__form__submit-message {
+  position: absolute;
+  bottom: 40px;
+  left: 20px;
+  z-index: 2;
+}
+.contact-form__message {
+  display: none;
+  padding: 0.8rem;
+  background-color: #f2f2f2;
+  border-radius: 9px 9px 9px 0px;
+}
+.contact-form__message i {
+  margin-left: 0.8rem;
+  margin-right: 0.8rem;
+}
+.contact-form__message:first-child i {
+  color: green;
+}
+.contact-form__message:last-child i {
+  color: red;
+}
 .email-me__form .btn--primary {
   width: 100%;
 }
@@ -200,13 +223,13 @@
   .project-list {
     grid-template-columns: 1fr 1fr;
   }
-  .header {
-    margin-bottom: 11.2rem;
+  main {
+    margin-top: 11.2rem;
   }
 }
 @media (min-width: 768px) {
-  .header {
-    margin-bottom: 14.4rem;
+  main {
+    margin-top: 14.4rem;
   }
   .platform-container {
     grid-template-columns: 1fr 1fr;

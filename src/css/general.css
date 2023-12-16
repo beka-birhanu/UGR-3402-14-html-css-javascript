@@ -21,6 +21,7 @@ textarea {
 }
 html {
   font-size: 62.5%;
+  scroll-padding-top: 6.4rem;
 }
 article {
   margin-bottom: 14.4rem;
