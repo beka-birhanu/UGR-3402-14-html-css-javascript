@@ -104,6 +104,7 @@
 .project-main {
   margin-left: 0;
   margin-right: 0;
+  margin-top: 0;
 }
 .project-main__project-hero {
   background-image: url(../images/background/project-detail-hero.png);
