@@ -4,7 +4,7 @@ Welcome to my portfolio project! This repository contains the source code for my
 
 ## Directory Structure
 
-## CSS Files
+### CSS Files
 
 1. **general.css**: Contains general class styles used throughout the portfolio. (Alphabetically ordered)
 
@@ -14,7 +14,15 @@ Welcome to my portfolio project! This repository contains the source code for my
 
 4. **designsystem.txt**: Guidelines and conventions followed for the development of the CSS.
 
-## Image Directories
+### Script Files
+
+1. **header.js**: Handles the functionality for making the header sticky only when scrolling up, after scrolling strictly greater than one viewport height. It also implements a sliding-in effect for the mobile hamburger menu button.
+
+2. **home.js**: Manages smooth scrolling for bookmarks and facilitates sending emails via formspree.io.
+
+3. **pagination.js**: Provides functionality for smooth animations in the pagination of the blog page. While pagination doesn't change the content of the page, it enhances user experience with a cool animation.
+
+### Image Directories
 
 1. **backgrounds/**: Contains images used as backgrounds for various sections of the portfolio.
 
@@ -25,3 +33,4 @@ Welcome to my portfolio project! This repository contains the source code for my
 4. **logos/**: Stores logos used within the portfolio.
 
 Feel free to explore the directories for more details about the project's structure and assets. If you have any questions or suggestions, please don't hesitate to reach out!
+
