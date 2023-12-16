@@ -95,6 +95,69 @@
         </button>
       </div>
     </header>
+    <div class="only-mobile header--mobile header--mobile--inactive">
+      <div class="header--mobile__hero">
+        <img
+          src="./images/logos/logo.png"
+          alt="Beka Birhanu Logo"
+          class="header__logo"
+        />
+        <button>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="24"
+            viewBox="0 -960 960 960"
+            width="24"
+            class="btn--cancel"
+          >
+            <path
+              d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"
+            />
+          </svg>
+        </button>
+
+        <div>
+          <p class="p-1">LET'S BUILD SOMETHING TOGETHER</p>
+          <br />
+          <hr />
+        </div>
+      </div>
+      <nav>
+        <ul class="header__nav--mobile">
+          <li>
+            <a href="./index.html" class="header__nav_anchor p-1">Home</a>
+          </li>
+          <li>
+            <a href="./index.html#about" class="header__nav_anchor p-1"
+              >About</a
+            >
+          </li>
+          <li>
+            <a href="./index.html#skill" class="header__nav_anchor p-1"
+              >Skill</a
+            >
+          </li>
+          <li>
+            <a href="./index.html#project" class="header__nav_anchor p-1"
+              >Projects</a
+            >
+          </li>
+          <li>
+            <a href="./resume.html" class="header__nav_anchor p-1">Resume</a>
+          </li>
+          <li>
+            <a href="./blog.html" class="header__nav_anchor p-1">Blog</a>
+          </li>
+          <li>
+            <a
+              href="./index.html#contact"
+              class="header__nav_anchor header__nav_anchor--contact--mobile p-1"
+              >Contact Me</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </div>
     <main class="vertical-flex">
       <div class="main-container">
         <article class="vertical-flex section-container">
@@ -293,58 +356,68 @@
             </section>
           </div>
         </article>
-        <nav aria-label="Pagination" class="pagination">
-          <a
-            href="/blog/"
-            aria-label="Pagination Arrow"
-            class="btn--pagination"
-          >
-            <svg
-              viewBox="0 0 20 20"
-              fill="currentcolor"
-              aria-hidden="true"
-              height="30"
-              width="30"
-              class="btn--pagination__svg"
-            >
-              <path
-                fill-rule="evenodd"
-                d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414.0z"
-                clip-rule="evenodd"
-              ></path>
-            </svg>
-            <span>Previous</span>
-          </a>
-          <span aria-current="page" class="btn--pagination--active">1</span>
-          <a href="/blog/" aria-current="page" class="btn--pagination">2</a>
-          <a href="/blog/page/3/" aria-current="page" class="btn--pagination"
-            >3</a
-          >
-          <a
-            href="/blog/page/3/"
-            aria-label="Pagination Arrow"
-            class="btn--pagination"
-            ><span>Next</span
-            ><svg
-              viewBox="0 0 20 20"
-              fill="currentcolor"
-              aria-hidden="true"
-              height="30"
-              width="30"
-              class="btn--pagination__svg"
-            >
-              <path
-                fill-rule="evenodd"
-                d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414.0z"
-                clip-rule="evenodd"
-              ></path>
-            </svg>
-          </a>
+        <nav aria-label="Pagination">
+          <hr style="opacity: 0.3" />
+          <br />
+          <br />
+          <ul class="pagination">
+            <li>
+              <a aria-label="Pagination Arrow" class="pagination__btn">
+                <svg
+                  viewBox="0 0 20 20"
+                  fill="currentcolor"
+                  aria-hidden="true"
+                  height="30"
+                  width="30"
+                  class="btn--pagination__svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414.0z"
+                    clip-rule="evenodd"
+                  ></path>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a
+                aria-current="page"
+                class="btn--pagination btn--pagination--active"
+                >1
+              </a>
+            </li>
+            <li>
+              <a aria-current="page" class="btn--pagination">2</a>
+            </li>
+            <li>
+              <a aria-current="page" class="btn--pagination">3</a>
+            </li>
+            <li>
+              <a aria-label="Pagination Arrow" class="pagination__btn"
+                ><svg
+                  viewBox="0 0 20 20"
+                  fill="currentcolor"
+                  aria-hidden="true"
+                  height="30"
+                  width="30"
+                  class="btn--pagination__svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414.0z"
+                    clip-rule="evenodd"
+                  ></path>
+                </svg>
+              </a>
+            </li>
+          </ul>
         </nav>
       </div>
     </main>
     <footer>
       <img src="./images/logos/logo.png" alt="Beka Birhanu Logo" />
     </footer>
+    <script src="./script/header.js"></script>
+    <script src="./script/pagination.js"></script>
   </body>
 </html>
